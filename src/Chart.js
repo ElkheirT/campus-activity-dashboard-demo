@@ -1,31 +1,85 @@
-import Plot from 'react-plotly.js';
-import usePlotly from "./usePlotly";
-import Plotly from "react-plotly.js";
+import {VictoryArea, VictoryAxis, VictoryChart, VictoryLabel, VictoryLine} from "victory";
+import {useCallback, useEffect, useState} from "react";
 
+function Chart() {
+    let startTime = new Date(2022, 6, 20, 7, 0);
 
-function Chart(props) {
+    let [data, setData] = useState([{x: startTime, y: 0}]);
 
+    function getNewDataPoint() {
+        let activityData = [...data];
+        let lastDataPoint = activityData.slice(-1)[0];
+        let lastDateObj = lastDataPoint.x;
 
-    let x = [...Array(5).keys()];
-    let y = x.map((val) => (val * val));
+        let newDateObj = new Date(lastDateObj.getTime() + 900000);
+        let y = Math.random() * 50;
+        activityData.push({x: newDateObj, y});
+        setData(activityData);
+    }
 
-    let state = {data: [x, y], layout: { datarevision: 0 }, revision: 0, frames: [], config: {}}
+    function getTimeStringFromMsec(msec) {
+        let dateObj = new Date(msec);
+        let hours = dateObj.getHours();
+        let period = "AM";
 
-    return (
-        <div>
-            <Plot
-                data={[
-                    {
-                        x,
-                        y,
-                        type: "line",
-                        mode: 'lines+markers'
-                    }
-                ]}
-                layout={{height: 400, width: 600, title: "Campus Activity"}}
+        if (hours > 12) {
+            hours = hours % 12;
+            period = "PM";
+        }
+
+        let timeString = `${hours}:${String(dateObj.getMinutes()).padStart(2, "0")}${period}`;
+        return timeString;
+    }
+
+    // useEffect(() => {
+    //     const interval = setInterval(() => {
+    //         getNewDataPoint();
+    //     }, 2000);
+    //     return () => clearInterval(interval);
+    // })
+
+    return (<div>
+        <svg style={{height: 0}}>
+            <defs>
+                <linearGradient id="myGradient" gradientTransform="rotate(90)">
+                    <stop offset="0%" stopColor="#8884d8" stopOpacity={.8}/>
+                    <stop offset="100%" stopColor="#8884d8" stopOpacity={0}/>
+                </linearGradient>
+            </defs>
+        </svg>
+        <VictoryChart>
+            <VictoryArea data={data}
+                         interpolation={"natural"}
+                         style={{
+                             data: {
+                                 stroke: "#8884d8", fill: "url(#myGradient)"
+                             }, parent: {border: "1px solid #ccc"}
+                         }}
+                         animate={{
+                             duration: 500
+                         }}
             />
-        </div>
-    )
+
+            <VictoryAxis
+                tickValues={data.map((i) => i.x.getTime())}
+                tickFormat={(t) => {
+                    if (data.length <= 1) {
+                        return "";
+                    }
+                    return getTimeStringFromMsec(t);
+                }}
+
+                tickCount={3}
+            />
+
+            <VictoryAxis dependentAxis domain={{y: [0, 60]}} />
+        </VictoryChart>
+        <button onClick={() => {
+            getNewDataPoint()
+        }}>
+            Add Data
+        </button>
+    </div>)
 }
 
 export default Chart;
