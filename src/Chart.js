@@ -6,6 +6,9 @@ function Chart() {
 
     let [data, setData] = useState([{x: startTime, y: 0}]);
 
+    let getDataInterval;
+    let isRunning = true;
+
     function getNewDataPoint() {
         let activityData = [...data];
         let lastDataPoint = activityData.slice(-1)[0];
@@ -31,12 +34,14 @@ function Chart() {
         return timeString;
     }
 
-    // useEffect(() => {
-    //     const interval = setInterval(() => {
-    //         getNewDataPoint();
-    //     }, 2000);
-    //     return () => clearInterval(interval);
-    // })
+    // add 10 points to graph
+    useEffect(() => {
+        if (data.length < 10) {
+            setTimeout(() => {
+                getNewDataPoint();
+            }, 2000);
+        }
+    });
 
     return (<div>
         <svg style={{height: 0}}>
@@ -56,7 +61,7 @@ function Chart() {
                              }, parent: {border: "1px solid #ccc"}
                          }}
                          animate={{
-                             duration: 500
+                             duration: 1000
                          }}
             />
 
@@ -68,11 +73,15 @@ function Chart() {
                     }
                     return getTimeStringFromMsec(t);
                 }}
-
                 tickCount={3}
+                label={"Time"}
+                style={ {axisLabel: {padding: 35, fontSize: 16}}}
             />
 
-            <VictoryAxis dependentAxis domain={{y: [0, 60]}} />
+            <VictoryAxis dependentAxis domain={{y: [0, 60]}}
+                         label={"Motion Sensor Hits"}
+                         style={ {axisLabel: {padding: 35, fontSize: 16}}}
+            />
         </VictoryChart>
         <button onClick={() => {
             getNewDataPoint()
