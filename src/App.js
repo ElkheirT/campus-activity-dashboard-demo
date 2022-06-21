@@ -1,7 +1,6 @@
 import "./App.css";
 import {Card, CardContent, Container, Grid, Paper, Stack, Typography} from "@mui/material";
 import Chart from "./Chart";
-import InfoCard from "./InfoCard";
 
 function App() {
     return (<div className="App">

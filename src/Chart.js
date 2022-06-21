@@ -1,13 +1,10 @@
 import {VictoryArea, VictoryAxis, VictoryChart, VictoryLabel, VictoryLine} from "victory";
-import {useCallback, useEffect, useState} from "react";
+import { useEffect, useState} from "react";
 
 function Chart() {
     let startTime = new Date(2022, 6, 20, 7, 0);
 
     let [data, setData] = useState([{x: startTime, y: 0}]);
-
-    let getDataInterval;
-    let isRunning = true;
 
     function getNewDataPoint() {
         let activityData = [...data];
