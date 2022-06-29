@@ -1,0 +1,16 @@
+blinker
+Click
+Flask
+Flask-JWT-Extended
+Flask-Mail
+flask-marshmallow
+Flask-SQLAlchemy
+itsdangerous
+Jinja2
+MarkupSafe
+marshmallow
+marshmallow-sqlalchemy
+PyJWT
+six
+SQLAlchemy
+Werkzeug
