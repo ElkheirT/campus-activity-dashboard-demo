@@ -3,6 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_marshmallow import Marshmallow
 from sqlalchemy import Column, Integer, String, Float
 import os
+import datetime
 
 app = Flask(__name__)
 basedir = os.path.abspath(os.path.dirname(__file__))
@@ -25,14 +26,16 @@ class MotionSensorData(db.Model):
 
 class MotionSensorDataSchema(ma.Schema):
     class Meta:
-        fields = ('')
+        fields = ('time_stamp', "motion_sensor_count")
 
 
 @app.route('/add_data', methods=['POST'])
 def add_data():
     sensor_count = request.form['sensor_count']
+    time_stamp = datetime.datetime.now()
+    data_point = MotionSensorData(id=time_stamp, sensor_count=sensor_count)
+    return jsonify(message=f'Got sensor count: {sensor_count} at time {time_stamp}'), 200
 
-    return jsonify(message=f'Got sensor count: {sensor_count}'), 200
 
 
 
