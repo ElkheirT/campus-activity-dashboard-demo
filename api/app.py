@@ -16,16 +16,23 @@ def db_create():
     db.create_all()
     print('Database created.')
 
+
 class MotionSensorData(db.Model):
     __tablename__ = 'motion_sensor_data'
     id = Column(String, primary_key=True)
     sensor_count = Column(Integer)
 
 
+class MotionSensorDataSchema(ma.Schema):
+    class Meta:
+        fields = ('')
+
+
 @app.route('/add_data', methods=['POST'])
 def add_data():
     sensor_count = request.form['sensor_count']
-    return jsonify(message=f'Got sensor count: ${sensor_count}'), 200
+
+    return jsonify(message=f'Got sensor count: {sensor_count}'), 200
 
 
 
