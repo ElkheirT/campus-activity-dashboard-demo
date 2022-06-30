@@ -18,6 +18,15 @@ def db_create():
     print('Database created.')
 
 
+@app.cli.command('db_seed')
+def db_seed():
+    time_stamp = datetime.datetime.now()
+    data_point = MotionSensorData(id=time_stamp, sensor_count=0)
+    db.session.add(data_point)
+    db.session.commit()
+    print('Database seeded.')
+
+
 class MotionSensorData(db.Model):
     __tablename__ = 'motion_sensor_data'
     id = Column(String, primary_key=True)
@@ -34,8 +43,12 @@ def add_data():
     sensor_count = request.form['sensor_count']
     time_stamp = datetime.datetime.now()
     data_point = MotionSensorData(id=time_stamp, sensor_count=sensor_count)
+    db.session.add(data_point)
+    db.session.commit()
     return jsonify(message=f'Got sensor count: {sensor_count} at time {time_stamp}'), 200
 
+
+# motion_data_schema = MotionSensorData()
 
 
 
