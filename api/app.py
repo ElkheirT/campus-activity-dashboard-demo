@@ -57,7 +57,7 @@ class HumidityDataSchema(ma.Schema):
 
 
 @app.route('/add_motion_data', methods=['POST'])
-def add_data():
+def add_motion_data():
     time_stamp = request.form['time_stamp']
     sensor_count = request.form['sensor_count']
     data_point = MotionDataPoint(time_stamp=time_stamp, sensor_count=sensor_count)
