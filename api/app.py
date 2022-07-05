@@ -1,12 +1,16 @@
 from flask import Flask, jsonify, request
 from flask_sqlalchemy import SQLAlchemy
 from flask_marshmallow import Marshmallow
-from sqlalchemy import Column, Integer, String, Float, Date
+from sqlalchemy import Column, Integer, Time, Float, Date
+from datetime import datetime
 import os
 
+TIMESTAMP_FORMAT = '%Y-%m-%d %H:%M:%S'
 app = Flask(__name__)
 basedir = os.path.abspath(os.path.dirname(__file__))
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(basedir, 'data.db')
+app.config['TIMESTAMP_FORMAT'] = TIMESTAMP_FORMAT
+
 db = SQLAlchemy(app)
 ma = Marshmallow(app)
 
@@ -25,7 +29,7 @@ def db_drop():
 
 class MotionDataPoint(db.Model):
     __tablename__ = 'motion_data'
-    time_stamp = Column(Date, primary_key=True)
+    time_stamp = Column(Time, primary_key=True)
     sensor_count = Column(Integer)
 
 
@@ -37,7 +41,7 @@ class TempDataPoint(db.Model):
 
 class HumidityDataPoint(db.Model):
     __tablename__ = 'humidity_data'
-    time_stamp = Column(Date, primary_key=True)
+    time_stamp = Column(db.DateTime, primary_key=True)
     humidity = Column(Float)
 
 
@@ -58,11 +62,12 @@ class HumidityDataSchema(ma.Schema):
 
 @app.route('/add_motion_data', methods=['POST'])
 def add_motion_data():
-    time_stamp = request.form['time_stamp']
+    time_stamp = datetime.strptime(request.form['time_stamp'])
     sensor_count = request.form['sensor_count']
     data_point = MotionDataPoint(time_stamp=time_stamp, sensor_count=sensor_count)
-    db.session.add(data_point)
-    db.session.commit()
+    print(type(time_stamp))
+    # db.session.add(data_point)
+    # db.session.commit()
     return jsonify(message=f'Got sensor count: {sensor_count} at time {time_stamp}'), 200
 
 
@@ -84,3 +89,8 @@ def add_humidity_data():
     db.session.add(data_point)
     db.session.commit()
     return jsonify(message=f'Got humidity: {humidity} at time {time_stamp}'), 200
+
+
+@app.route('/get_timestamp_format', methods=['GET'])
+def get_timestamp_format():
+    return jsonify(timestamp_format=TIMESTAMP_FORMAT)
