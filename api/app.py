@@ -1,7 +1,7 @@
 from flask import Flask, jsonify, request
 from flask_sqlalchemy import SQLAlchemy
 from flask_marshmallow import Marshmallow
-from sqlalchemy import Column, Integer, Time, Float, Date
+from sqlalchemy import Column, Float, String
 from datetime import datetime
 import os
 
@@ -10,7 +10,6 @@ app = Flask(__name__)
 basedir = os.path.abspath(os.path.dirname(__file__))
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(basedir, 'data.db')
 app.config['TIMESTAMP_FORMAT'] = TIMESTAMP_FORMAT
-
 db = SQLAlchemy(app)
 ma = Marshmallow(app)
 
@@ -27,70 +26,27 @@ def db_drop():
     print('Database dropped.')
 
 
-class MotionDataPoint(db.Model):
-    __tablename__ = 'motion_data'
-    time_stamp = Column(Time, primary_key=True)
-    sensor_count = Column(Integer)
-
-
-class TempDataPoint(db.Model):
-    __tablename__ = 'temp_data'
-    time_stamp = Column(Date, primary_key=True)
-    temp = Column(Float)
-
-
-class HumidityDataPoint(db.Model):
-    __tablename__ = 'humidity_data'
+class SensorData(db.Model):
+    __tablename__ = 'sensor_data'
     time_stamp = Column(db.DateTime, primary_key=True)
-    humidity = Column(Float)
+    sensor_type = Column(String, primary_key=True)
+    location = Column(String, primary_key=True)
+    sensor_output = Column(Float)
 
 
-class MotionDataSchema(ma.Schema):
+class SensorDataSchema(ma.Schema):
     class Meta:
-        fields = ('time_stamp', "sensor_count")
+        fields = ('time_stamp', 'sensor_type', 'location', 'sensor_output')
 
 
-class TempDataSchema(ma.Schema):
-    class Meta:
-        fields = ('time_stamp', "temp")
-
-
-class HumidityDataSchema(ma.Schema):
-    class Meta:
-        fields = ('time_stamp', "humidity")
-
-
-@app.route('/add_motion_data', methods=['POST'])
-def add_motion_data():
-    time_stamp = datetime.strptime(request.form['time_stamp'])
-    sensor_count = request.form['sensor_count']
-    data_point = MotionDataPoint(time_stamp=time_stamp, sensor_count=sensor_count)
-    print(type(time_stamp))
-    # db.session.add(data_point)
-    # db.session.commit()
-    return jsonify(message=f'Got sensor count: {sensor_count} at time {time_stamp}'), 200
-
-
-@app.route('/add_temp_data', methods=['POST'])
-def add_temp_data():
-    time_stamp = request.form['time_stamp']
-    temp = request.form['temp']
-    data_point = TempDataPoint(time_stamp=time_stamp, temp=temp)
-    db.session.add(data_point)
+@app.route('/add_sensor_data', methods=['POST'])
+def add_sensor_data():
+    time_stamp = datetime.strptime(request.form['time_stamp'], TIMESTAMP_FORMAT)
+    sensor_type = request.form['sensor_type']
+    location = request.form['location']
+    sensor_output = request.form['sensor_output']
+    data = SensorData(time_stamp=time_stamp, sensor_type=sensor_type, location=location, sensor_output=sensor_output)
+    db.session.add(data)
     db.session.commit()
-    return jsonify(message=f'Got temp: {temp} at time {time_stamp}'), 200
-
-
-@app.route('/add_humidity_data', methods=['POST'])
-def add_humidity_data():
-    time_stamp = request.form['time_stamp']
-    humidity = request.form['humidity']
-    data_point = TempDataPoint(time_stamp=time_stamp, humidity=humidity)
-    db.session.add(data_point)
-    db.session.commit()
-    return jsonify(message=f'Got humidity: {humidity} at time {time_stamp}'), 200
-
-
-@app.route('/get_timestamp_format', methods=['GET'])
-def get_timestamp_format():
-    return jsonify(timestamp_format=TIMESTAMP_FORMAT)
+    return jsonify(
+        message=f'sensor type: {sensor_type}, location: {location}, output: {sensor_output}, time: {time_stamp}'), 200
