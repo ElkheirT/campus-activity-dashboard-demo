@@ -1,10 +1,11 @@
+import bcrypt
 import click
+import os
 from flask import Flask, jsonify, request
 from flask_sqlalchemy import SQLAlchemy
 from flask_marshmallow import Marshmallow
 from sqlalchemy import Column, Float, String, Integer
 from datetime import datetime
-import os
 
 TIMESTAMP_FORMAT = '%Y-%m-%d %H:%M:%S'
 app = Flask(__name__)
@@ -13,13 +14,6 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(basedir, 'da
 app.config['TIMESTAMP_FORMAT'] = TIMESTAMP_FORMAT
 db = SQLAlchemy(app)
 ma = Marshmallow(app)
-
-
-@app.cli.command('create_user')
-@click.argument('username')
-@click.argument('password')
-def create_user(username, password):
-    pass
 
 
 @app.cli.command('db_create')
@@ -34,10 +28,10 @@ def db_drop():
     print('Database dropped.')
 
 
-class AuthorizedUsers(db.Model):
-    __tablename__ = 'authorized_users'
+class User(db.Model):
+    __tablename__ = 'users'
     id = Column(Integer, primary_key=True)
-    user_name = Column(String)
+    username = Column(String, unique=True)
     password = Column(String)
 
 
@@ -52,6 +46,22 @@ class SensorData(db.Model):
 class SensorDataSchema(ma.Schema):
     class Meta:
         fields = ('time_stamp', 'sensor_type', 'location', 'sensor_output')
+
+
+@app.route('/register', methods=['POST'])
+def register():
+    username = request.form['username']
+    password = request.form['password']
+    user_exists = User.query.filter_by(username=username).first()
+    if user_exists:
+        return jsonify(message=f'The user "{username}" already exists'), 409
+    else:
+        pw_as_bytes = str.encode(password)
+        pw_hashed = bcrypt.hashpw(pw_as_bytes, bcrypt.gensalt())
+        user = User(username=username, password=pw_hashed)
+        db.session.add(user)
+        db.session.commit()
+        return jsonify(message=f'Successfully added user "{username}"'), 201
 
 
 @app.route('/add_sensor_data', methods=['POST'])
