@@ -1,19 +1,24 @@
 import bcrypt
-import click
 import os
+from dotenv import load_dotenv
 from flask import Flask, jsonify, request
 from flask_sqlalchemy import SQLAlchemy
 from flask_marshmallow import Marshmallow
 from sqlalchemy import Column, Float, String, Integer
+from flask_jwt_extended import JWTManager, jwt_required, create_access_token
 from datetime import datetime
 
-TIMESTAMP_FORMAT = '%Y-%m-%d %H:%M:%S'
 app = Flask(__name__)
+load_dotenv()
+TIMESTAMP_FORMAT = '%Y-%m-%d %H:%M:%S'
 basedir = os.path.abspath(os.path.dirname(__file__))
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(basedir, 'data.db')
 app.config['TIMESTAMP_FORMAT'] = TIMESTAMP_FORMAT
+app.config['JWT_SECRET_KEY'] = os.environ['JWT_SECRET_KEY']
+
 db = SQLAlchemy(app)
 ma = Marshmallow(app)
+jwt = JWTManager(app)
 
 
 @app.cli.command('db_create')
@@ -52,8 +57,8 @@ class SensorDataSchema(ma.Schema):
 def register():
     username = request.form['username']
     password = request.form['password']
-    user_exists = User.query.filter_by(username=username).first()
-    if user_exists:
+    user = User.query.filter_by(username=username).first()
+    if user:
         return jsonify(message=f'The user "{username}" already exists'), 409
     else:
         pw_as_bytes = str.encode(password)
@@ -62,6 +67,23 @@ def register():
         db.session.add(user)
         db.session.commit()
         return jsonify(message=f'Successfully added user "{username}"'), 201
+
+
+@app.route('/login', methods=['POST'])
+def login():
+    username = request.form['username']
+    password = request.form['password']
+    user = User.query.filter_by(username=username).first()
+    if user:
+        pw_as_bytes = str.encode(password)
+        pw_hashed = user.password
+        if bcrypt.checkpw(pw_as_bytes, pw_hashed):
+            access_token = create_access_token(identity=username)
+            return jsonify(message="Login succeeded", access_token=access_token), 200
+        else:
+            return jsonify(message="Bad username or password"), 401
+    else:
+        return jsonify(message="Bad username or password"), 401
 
 
 @app.route('/add_sensor_data', methods=['POST'])
