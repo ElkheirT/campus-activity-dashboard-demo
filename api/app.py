@@ -1,7 +1,8 @@
+import click
 from flask import Flask, jsonify, request
 from flask_sqlalchemy import SQLAlchemy
 from flask_marshmallow import Marshmallow
-from sqlalchemy import Column, Float, String
+from sqlalchemy import Column, Float, String, Integer
 from datetime import datetime
 import os
 
@@ -14,6 +15,13 @@ db = SQLAlchemy(app)
 ma = Marshmallow(app)
 
 
+@app.cli.command('create_user')
+@click.argument('username')
+@click.argument('password')
+def create_user(username, password):
+    pass
+
+
 @app.cli.command('db_create')
 def db_create():
     db.create_all()
@@ -24,6 +32,13 @@ def db_create():
 def db_drop():
     db.drop_all()
     print('Database dropped.')
+
+
+class AuthorizedUsers(db.Model):
+    __tablename__ = 'authorized_users'
+    id = Column(Integer, primary_key=True)
+    user_name = Column(String)
+    password = Column(String)
 
 
 class SensorData(db.Model):
