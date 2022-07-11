@@ -87,6 +87,7 @@ def login():
 
 
 @app.route('/add_sensor_data', methods=['POST'])
+@jwt_required()
 def add_sensor_data():
     time_stamp = datetime.strptime(request.form['time_stamp'], TIMESTAMP_FORMAT)
     sensor_type = request.form['sensor_type']
