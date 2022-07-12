@@ -1,11 +1,14 @@
 import bcrypt
 import os
+import queue
 from dotenv import load_dotenv
 from flask import Flask, jsonify, request
+from flask_socketio import SocketIO
 from flask_sqlalchemy import SQLAlchemy
 from flask_marshmallow import Marshmallow
 from sqlalchemy import Column, Float, String, Integer
 from flask_jwt_extended import JWTManager, jwt_required, create_access_token
+from flask_socketio import send, emit
 from datetime import datetime
 
 app = Flask(__name__)
@@ -15,10 +18,14 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(basedir, 'data.db')
 app.config['TIMESTAMP_FORMAT'] = TIMESTAMP_FORMAT
 app.config['JWT_SECRET_KEY'] = os.environ['JWT_SECRET_KEY']
+app.config['SECRET_KEY'] = os.environ['SECRET_KEY']
 
 db = SQLAlchemy(app)
 ma = Marshmallow(app)
 jwt = JWTManager(app)
+socketio = SocketIO(app)
+
+message_queue = queue.Queue()
 
 
 @app.cli.command('db_create')
@@ -87,7 +94,7 @@ def login():
 
 
 @app.route('/add_sensor_data', methods=['POST'])
-@jwt_required()
+# @jwt_required()
 def add_sensor_data():
     time_stamp = datetime.strptime(request.form['time_stamp'], TIMESTAMP_FORMAT)
     sensor_type = request.form['sensor_type']
@@ -96,5 +103,25 @@ def add_sensor_data():
     data = SensorData(time_stamp=time_stamp, sensor_type=sensor_type, location=location, sensor_output=sensor_output)
     db.session.add(data)
     db.session.commit()
+
+    data_as_json = sensor_data_schema.dump(data)
+    message_queue.put(data_as_json)
+
     return jsonify(
         message=f'sensor type: {sensor_type}, location: {location}, output: {sensor_output}, time: {time_stamp}'), 200
+
+
+@socketio.on('connect')
+def on_connect():
+    while True:
+        print(message_queue.qsize())
+        message = message_queue.get()
+        socketio.emit(message)
+        message_queue.task_done()
+
+
+sensor_data_schema = SensorDataSchema()
+sensor_data_list_schema = SensorDataSchema(many=True)
+
+if __name__ == '__main__':
+    socketio.run(app)
