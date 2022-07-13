@@ -28,6 +28,7 @@ function Chart({motionSensorData}) {
         }
 
         let timeString = `${hours}:${String(dateObj.getMinutes()).padStart(2, "0")}${period}`;
+        console.log(timeString)
         return timeString;
     }
 
@@ -62,24 +63,22 @@ function Chart({motionSensorData}) {
                          }}
             />
 
-            {/*<VictoryAxis*/}
-            {/*    tickValues={data.map((i) => i.x.getTime())}*/}
-            {/*    tickFormat={(t) => {*/}
-            {/*        if (data.length <= 1) {*/}
-            {/*            return "";*/}
-            {/*        }*/}
-            {/*        let dateObj = new Date(t)*/}
-            {/*        return `${dateObj.getHours()}:${dateObj.getMinutes()}`*/}
-            {/*    }}*/}
-            {/*    tickCount={3}*/}
-            {/*    label={"Time"}*/}
-            {/*    style={ {axisLabel: {padding: 35, fontSize: 16}}}*/}
-            {/*/>*/}
+            <VictoryAxis
+                tickFormat={(t) => {
+                    if (motionSensorData.length <= 1) {
+                        return "";
+                    }
+                    return getTimeStringFromMsec(t);
+                }}
+                tickCount={3}
+                label={"Time"}
+                style={ {axisLabel: {padding: 35, fontSize: 16}}}
+            />
 
-            {/*<VictoryAxis dependentAxis domain={{y: [0, 60]}}*/}
-            {/*             label={"Motion Sensor Hits"}*/}
-            {/*             style={ {axisLabel: {padding: 35, fontSize: 16}}}*/}
-            {/*/>*/}
+            <VictoryAxis dependentAxis domain={{y: [0, 60]}}
+                         label={"Motion Sensor Hits"}
+                         style={ {axisLabel: {padding: 35, fontSize: 16}}}
+            />
         </VictoryChart>
         <button onClick={() => {
             getNewDataPoint()
