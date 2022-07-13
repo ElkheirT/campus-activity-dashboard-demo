@@ -80,11 +80,6 @@ function Chart({motionSensorData}) {
                          style={ {axisLabel: {padding: 35, fontSize: 16}}}
             />
         </VictoryChart>
-        <button onClick={() => {
-            getNewDataPoint()
-        }}>
-            Add Data
-        </button>
     </div>)
 }
 

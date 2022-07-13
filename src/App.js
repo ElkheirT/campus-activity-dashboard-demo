@@ -17,7 +17,7 @@ function App() {
         socket.on('new_data', (data) => {
             let {time_stamp, sensor_output} = data;
             let newData = {x: new Date(time_stamp), y: parseInt(sensor_output)};
-            setMotionSensorData(prevState => [...prevState, newData].sort());
+            setMotionSensorData(prevState => [...prevState, newData]);
         });
     }, []);
 
@@ -37,6 +37,11 @@ function App() {
                 <Grid container>
                     <Grid item xs={8}>
                         <Chart motionSensorData={motionSensorData}></Chart>
+                        <button
+                            onClick={() => {
+                                setMotionSensorData([]);
+                            }}
+                        >Clear graph</button>
                     </Grid>
                     <Stack direction={"column"} justifyContent={"center"} spacing={2}>
                         <Card variant={"outlined"} style={{height: "30%", textAlign: "center"}}>
