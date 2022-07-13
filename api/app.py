@@ -23,8 +23,9 @@ app.config['SECRET_KEY'] = os.environ['SECRET_KEY']
 db = SQLAlchemy(app)
 ma = Marshmallow(app)
 jwt = JWTManager(app)
-socketio = SocketIO(app, cors_allowed_origins=["http://localhost:3000"])
+socketio = SocketIO(app, cors_allowed_origins=["http://localhost:3000"], logger=True, engineio_logger=True)
 message_queue = queue.Queue()
+
 
 @app.cli.command('db_create')
 def db_create():
@@ -99,15 +100,18 @@ def add_sensor_data():
     location = request.form['location']
     sensor_output = request.form['sensor_output']
     data = SensorData(time_stamp=time_stamp, sensor_type=sensor_type, location=location, sensor_output=sensor_output)
-    db.session.add(data)
-    db.session.commit()
-
+    # db.session.add(data)
+    # db.session.commit()
     data_as_json = sensor_data_schema.dump(data)
-    # socketio.emit('new_data', data_as_json)
+    # send_data(data_as_json)
     message_queue.put(data_as_json)
-
     return jsonify(
         message=f'sensor type: {sensor_type}, location: {location}, output: {sensor_output}, time: {time_stamp}'), 200
+
+
+# def send_data(data):
+#     print("sending data")
+#     socketio.emit('new_data', data)
 
 
 @socketio.on('get_data')

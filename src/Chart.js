@@ -1,8 +1,8 @@
 import {VictoryArea, VictoryAxis, VictoryChart, VictoryLabel, VictoryLine} from "victory";
 import { useEffect, useState} from "react";
 
-function Chart() {
-    let startTime = new Date(2022, 6, 20, 7, 0);
+function Chart({motionSensorData}) {
+    let startTime = new Date(0);
 
     let [data, setData] = useState([{x: startTime, y: 0}]);
 
@@ -32,13 +32,13 @@ function Chart() {
     }
 
     // add 10 points to graph
-    useEffect(() => {
-        if (data.length < 10) {
-            setTimeout(() => {
-                getNewDataPoint();
-            }, 2000);
-        }
-    });
+    // useEffect(() => {
+    //     if (data.length < 10) {
+    //         setTimeout(() => {
+    //             getNewDataPoint();
+    //         }, 2000);
+    //     }
+    // });
 
     return (<div>
         <svg style={{height: 0}}>
@@ -50,7 +50,7 @@ function Chart() {
             </defs>
         </svg>
         <VictoryChart>
-            <VictoryArea data={data}
+            <VictoryArea data={motionSensorData}
                          interpolation={"natural"}
                          style={{
                              data: {
@@ -62,23 +62,24 @@ function Chart() {
                          }}
             />
 
-            <VictoryAxis
-                tickValues={data.map((i) => i.x.getTime())}
-                tickFormat={(t) => {
-                    if (data.length <= 1) {
-                        return "";
-                    }
-                    return getTimeStringFromMsec(t);
-                }}
-                tickCount={3}
-                label={"Time"}
-                style={ {axisLabel: {padding: 35, fontSize: 16}}}
-            />
+            {/*<VictoryAxis*/}
+            {/*    tickValues={data.map((i) => i.x.getTime())}*/}
+            {/*    tickFormat={(t) => {*/}
+            {/*        if (data.length <= 1) {*/}
+            {/*            return "";*/}
+            {/*        }*/}
+            {/*        let dateObj = new Date(t)*/}
+            {/*        return `${dateObj.getHours()}:${dateObj.getMinutes()}`*/}
+            {/*    }}*/}
+            {/*    tickCount={3}*/}
+            {/*    label={"Time"}*/}
+            {/*    style={ {axisLabel: {padding: 35, fontSize: 16}}}*/}
+            {/*/>*/}
 
-            <VictoryAxis dependentAxis domain={{y: [0, 60]}}
-                         label={"Motion Sensor Hits"}
-                         style={ {axisLabel: {padding: 35, fontSize: 16}}}
-            />
+            {/*<VictoryAxis dependentAxis domain={{y: [0, 60]}}*/}
+            {/*             label={"Motion Sensor Hits"}*/}
+            {/*             style={ {axisLabel: {padding: 35, fontSize: 16}}}*/}
+            {/*/>*/}
         </VictoryChart>
         <button onClick={() => {
             getNewDataPoint()
