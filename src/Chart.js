@@ -28,7 +28,6 @@ function Chart({motionSensorData}) {
         }
 
         let timeString = `${hours}:${String(dateObj.getMinutes()).padStart(2, "0")}${period}`;
-        console.log(timeString)
         return timeString;
     }
 
