@@ -8,7 +8,6 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_marshmallow import Marshmallow
 from sqlalchemy import Column, Float, String, Integer
 from flask_jwt_extended import JWTManager, jwt_required, create_access_token
-from flask_socketio import send, emit
 from datetime import datetime
 
 app = Flask(__name__)
@@ -109,12 +108,7 @@ def add_sensor_data():
         message=f'sensor type: {sensor_type}, location: {location}, output: {sensor_output}, time: {time_stamp}'), 200
 
 
-# def send_data(data):
-#     print("sending data")
-#     socketio.emit('new_data', data)
-
-
-@socketio.on('get_data')
+@socketio.on('get_new_data')
 def on_get_data():
     while True:
         message = message_queue.get()
