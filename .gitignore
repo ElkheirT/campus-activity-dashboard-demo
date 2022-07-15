@@ -2,6 +2,7 @@
 
 api/api_venv
 api/.env
+api/data.db
 
 /.idea
 
