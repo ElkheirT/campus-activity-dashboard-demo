@@ -99,8 +99,8 @@ def add_sensor_data():
     location = request.form['location']
     sensor_output = request.form['sensor_output']
     data = SensorData(time_stamp=time_stamp, sensor_type=sensor_type, location=location, sensor_output=sensor_output)
-    # db.session.add(data)
-    # db.session.commit()
+    db.session.add(data)
+    db.session.commit()
     data_as_json = sensor_data_schema.dump(data)
     # send_data(data_as_json)
     message_queue.put(data_as_json)
@@ -115,6 +115,16 @@ def on_get_data():
         print("sending data")
         socketio.emit('new_data', message)
         message_queue.task_done()
+
+
+@socketio.on('get_past_data')
+def request_past_data(date_range):
+    start_date = datetime.strptime(date_range["startDate"], TIMESTAMP_FORMAT)
+    end_date = datetime.strptime(date_range["endDate"], TIMESTAMP_FORMAT)
+    past_data = SensorData.query.filter(SensorData.time_stamp.between(start_date, end_date))
+    if past_data:
+        result = sensor_data_list_schema.dump(past_data)
+        socketio.emit('past_data', result)
 
 
 sensor_data_schema = SensorDataSchema()
