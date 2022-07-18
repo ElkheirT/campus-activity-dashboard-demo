@@ -12,6 +12,8 @@
     "@testing-library/user-event": "^13.5.0",
     "assert": "^2.0.0",
     "buffer": "^6.0.3",
+    "dexie": "^3.2.2",
+    "dexie-react-hooks": "^1.1.1",
     "flyd": "^0.2.8",
     "lodash": "^4.17.21",
     "plotly.js": "^2.12.1",

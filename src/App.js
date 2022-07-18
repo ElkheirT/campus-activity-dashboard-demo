@@ -2,6 +2,8 @@ import "./App.css";
 import {Card, CardContent, Container, Grid, Paper, Stack, Typography} from "@mui/material";
 import Chart from "./Chart";
 import io from 'socket.io-client'
+import {db} from './db'
+
 import {useEffect, useState} from "react";
 
 function App() {
@@ -13,11 +15,20 @@ function App() {
         socket.emit('get_new_data')
 
         socket.on('new_data', (data) => {
-            let {time_stamp, sensor_output} = data;
-            let newData = {x: new Date(time_stamp), y: parseInt(sensor_output)};
-            setMotionSensorData(prevState => [...prevState, newData]);
+            addToDB(data);
+            // let {time_stamp, sensor_output} = data;
+            // let newData = {x: new Date(time_stamp), y: parseInt(sensor_output)};
+            // setMotionSensorData(prevState => [...prevState, newData]);
         });
     }, []);
+
+    async function addToDB(data) {
+        try {
+            const id = await db.data.add(data);
+        } catch (error) {
+            console.log("Failed to add data: ", error);
+        }
+    }
 
     useEffect(() => {
         console.log(motionSensorData)
