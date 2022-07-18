@@ -12,7 +12,23 @@ function App() {
 
     useEffect(() => {
         const socket = io('localhost:5000')
+
+        socket.emit('get_past_data', {
+            startDate: "2022-7-12 7:00:00",
+            endDate: "2022-7-12 22:00:00"
+        });
+
         socket.emit('get_new_data')
+
+        socket.on('past_data', (data) => {
+            console.log("got past data: ", data)
+            data.forEach((element) => {
+                let timeStamp = new Date(element.time_stamp)
+                let sensorOutput = element.sensor_output
+                let dataPoint = {x: timeStamp, y: sensorOutput}
+                setMotionSensorData(prevState => [...prevState, dataPoint]);
+            })
+        });
 
         socket.on('new_data', (data) => {
             addToDB(data);
