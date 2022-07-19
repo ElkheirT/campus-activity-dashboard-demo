@@ -1,21 +1,21 @@
 import {VictoryArea, VictoryAxis, VictoryChart, VictoryLabel, VictoryLine} from "victory";
-import { useEffect, useState} from "react";
+import {useEffect, useState} from "react";
+import {useLiveQuery} from "dexie-react-hooks";
+import {db} from "./db";
 
 function Chart({motionSensorData}) {
-    let startTime = new Date(0);
 
-    let [data, setData] = useState([{x: startTime, y: 0}]);
+    const motionData = useLiveQuery(() => {
+        return db.sensorData.toArray();
+    });
 
-    function getNewDataPoint() {
-        let activityData = [...data];
-        let lastDataPoint = activityData.slice(-1)[0];
-        let lastDateObj = lastDataPoint.x;
-
-        let newDateObj = new Date(lastDateObj.getTime() + 900000);
-        let y = Math.random() * 50;
-        activityData.push({x: newDateObj, y});
-        setData(activityData);
-    }
+    // useEffect(() => {
+    //     if (motionData) {
+    //         console.log(motionData.map((element) => {
+    //             return {x: new Date(element.time_stamp), y: element.sensor_output};
+    //         }));
+    //     }
+    // }, [motionData])
 
     function getTimeStringFromMsec(msec) {
         let dateObj = new Date(msec);
@@ -50,33 +50,36 @@ function Chart({motionSensorData}) {
             </defs>
         </svg>
         <VictoryChart>
-            <VictoryArea data={motionSensorData}
-                         interpolation={"natural"}
-                         style={{
-                             data: {
-                                 stroke: "#8884d8", fill: "url(#myGradient)"
-                             }, parent: {border: "1px solid #ccc"}
-                         }}
-                         animate={{
-                             duration: 1000
-                         }}
+            <VictoryArea
+                data={motionData?.map((element) => {
+                    return {x: new Date(element.time_stamp), y: element.sensor_output};
+                })}
+                interpolation={"natural"}
+                style={{
+                    data: {
+                        stroke: "#8884d8", fill: "url(#myGradient)"
+                    }, parent: {border: "1px solid #ccc"}
+                }}
+                animate={{
+                    duration: 500
+                }}
             />
 
             <VictoryAxis
                 tickFormat={(t) => {
-                    if (motionSensorData.length <= 1) {
+                    if (motionData?.length <= 1) {
                         return "";
                     }
                     return getTimeStringFromMsec(t);
                 }}
                 tickCount={3}
                 label={"Time"}
-                style={ {axisLabel: {padding: 35, fontSize: 16}}}
+                style={{axisLabel: {padding: 35, fontSize: 16}}}
             />
 
             <VictoryAxis dependentAxis domain={{y: [0, 60]}}
                          label={"Motion Sensor Hits"}
-                         style={ {axisLabel: {padding: 35, fontSize: 16}}}
+                         style={{axisLabel: {padding: 35, fontSize: 16}}}
             />
         </VictoryChart>
     </div>)

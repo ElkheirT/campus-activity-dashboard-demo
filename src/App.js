@@ -8,7 +8,7 @@ import {useEffect, useState} from "react";
 
 function App() {
     let startTime = new Date(2022, 6, 12, 6, 45);
-    let [motionSensorData, setMotionSensorData] = useState([{x: startTime, y: 0}]);
+    // let [motionSensorData, setMotionSensorData] = useState([{x: startTime, y: 0}]);
 
     useEffect(() => {
         const socket = io('localhost:5000')
@@ -21,13 +21,13 @@ function App() {
         socket.emit('get_new_data')
 
         socket.on('past_data', (data) => {
-            console.log("got past data: ", data)
-            data.forEach((element) => {
-                let timeStamp = new Date(element.time_stamp)
-                let sensorOutput = element.sensor_output
-                let dataPoint = {x: timeStamp, y: sensorOutput}
-                setMotionSensorData(prevState => [...prevState, dataPoint]);
-            })
+            // console.log("got past data: ", data)
+            // data.forEach((element) => {
+            //     let timeStamp = new Date(element.time_stamp)
+            //     let sensorOutput = element.sensor_output
+            //     let dataPoint = {x: timeStamp, y: sensorOutput}
+            //     setMotionSensorData(prevState => [...prevState, dataPoint]);
+            // })
         });
 
         socket.on('new_data', (data) => {
@@ -40,15 +40,15 @@ function App() {
 
     async function addToDB(data) {
         try {
-            const id = await db.data.add(data);
+            const id = await db.sensorData.add(data);
         } catch (error) {
             console.log("Failed to add data: ", error);
         }
     }
 
-    useEffect(() => {
-        console.log(motionSensorData)
-    }, [motionSensorData]);
+    // useEffect(() => {
+    //     // console.log(motionSensorData)
+    // }, [motionSensorData]);
 
     return (<div className="App">
         <Container>
@@ -61,13 +61,7 @@ function App() {
             >
                 <Grid container>
                     <Grid item xs={8}>
-                        <Chart motionSensorData={motionSensorData}></Chart>
-                        <button
-                            onClick={() => {
-                                setMotionSensorData([]);
-                            }}
-                        >Clear graph
-                        </button>
+                        <Chart></Chart>
                     </Grid>
                     <Stack direction={"column"} justifyContent={"center"} spacing={2}>
                         <Card variant={"outlined"} style={{height: "30%", textAlign: "center"}}>
