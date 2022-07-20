@@ -8,18 +8,10 @@ function Chart() {
     const motionSensorData = useLiveQuery(() => {
         return db.sensorData.toArray();
     }, [], []);
-
+    
     const dataToDisplay = motionSensorData.map((element) => {
         return {x: new Date(element.time_stamp), y: element.sensor_output};
-    })
-
-    // useEffect(() => {
-    //     if (motionData) {
-    //         console.log(motionData.map((element) => {
-    //             return {x: new Date(element.time_stamp), y: element.sensor_output};
-    //         }));
-    //     }
-    // }, [motionData])
+    });
 
     function getTimeStringFromMsec(msec) {
         let dateObj = new Date(msec);
@@ -34,15 +26,6 @@ function Chart() {
         let timeString = `${hours}:${String(dateObj.getMinutes()).padStart(2, "0")}${period}`;
         return timeString;
     }
-
-    // add 10 points to graph
-    // useEffect(() => {
-    //     if (data.length < 10) {
-    //         setTimeout(() => {
-    //             getNewDataPoint();
-    //         }, 2000);
-    //     }
-    // });
 
     return (<div>
         <svg style={{height: 0}}>

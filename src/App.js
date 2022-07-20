@@ -3,13 +3,9 @@ import {Card, CardContent, Container, Grid, Paper, Stack, Typography} from "@mui
 import Chart from "./Chart";
 import io from 'socket.io-client'
 import {db} from './db'
-
 import {useEffect, useState} from "react";
 
 function App() {
-    let startTime = new Date(2022, 6, 12, 6, 45);
-    // let [motionSensorData, setMotionSensorData] = useState([{x: startTime, y: 0}]);
-
     useEffect(() => {
         const socket = io('localhost:5000')
 
@@ -38,10 +34,6 @@ function App() {
             console.log("Failed to add data: ", error);
         }
     }
-
-    // useEffect(() => {
-    //     // console.log(motionSensorData)
-    // }, [motionSensorData]);
 
     return (<div className="App">
         <Container>
