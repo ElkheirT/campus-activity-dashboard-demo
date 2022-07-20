@@ -3,11 +3,15 @@ import {useEffect, useState} from "react";
 import {useLiveQuery} from "dexie-react-hooks";
 import {db} from "./db";
 
-function Chart({motionSensorData}) {
+function Chart() {
 
-    const motionData = useLiveQuery(() => {
+    const motionSensorData = useLiveQuery(() => {
         return db.sensorData.toArray();
-    });
+    }, [], []);
+
+    const dataToDisplay = motionSensorData.map((element) => {
+        return {x: new Date(element.time_stamp), y: element.sensor_output};
+    })
 
     // useEffect(() => {
     //     if (motionData) {
@@ -51,9 +55,7 @@ function Chart({motionSensorData}) {
         </svg>
         <VictoryChart>
             <VictoryArea
-                data={motionData?.map((element) => {
-                    return {x: new Date(element.time_stamp), y: element.sensor_output};
-                })}
+                data={dataToDisplay}
                 interpolation={"natural"}
                 style={{
                     data: {
@@ -61,13 +63,15 @@ function Chart({motionSensorData}) {
                     }, parent: {border: "1px solid #ccc"}
                 }}
                 animate={{
-                    duration: 500
+                    duration: 800,
+                    onEnter: {duration: 0},
+                    onLoad: {duration: 0}
                 }}
             />
 
             <VictoryAxis
                 tickFormat={(t) => {
-                    if (motionData?.length <= 1) {
+                    if (motionSensorData?.length <= 1) {
                         return "";
                     }
                     return getTimeStringFromMsec(t);

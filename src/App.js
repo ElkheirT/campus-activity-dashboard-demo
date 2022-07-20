@@ -21,20 +21,13 @@ function App() {
         socket.emit('get_new_data')
 
         socket.on('past_data', (data) => {
-            // console.log("got past data: ", data)
             // data.forEach((element) => {
-            //     let timeStamp = new Date(element.time_stamp)
-            //     let sensorOutput = element.sensor_output
-            //     let dataPoint = {x: timeStamp, y: sensorOutput}
-            //     setMotionSensorData(prevState => [...prevState, dataPoint]);
+            //     addToDB(element);
             // })
         });
 
         socket.on('new_data', (data) => {
             addToDB(data);
-            // let {time_stamp, sensor_output} = data;
-            // let newData = {x: new Date(time_stamp), y: parseInt(sensor_output)};
-            // setMotionSensorData(prevState => [...prevState, newData]);
         });
     }, []);
 
