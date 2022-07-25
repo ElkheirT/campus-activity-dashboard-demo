@@ -22,14 +22,17 @@ import InfoCard from "./InfoCard";
 
 function App() {
     let currentTime = new Date();
-    let openTime = new Date(currentTime.getFullYear(), currentTime.getMonth(), currentTime.getDate(), 7, 0, 0);
+    // assume library is open from 7AM to 10PM
+    let openTime = new Date(currentTime.getFullYear(), currentTime.getMonth(), currentTime.getDate(), 6, 59, 0);
     let closeTime = new Date(currentTime.getFullYear(), currentTime.getMonth(), currentTime.getDate(), 22, 0, 0);
-    const socket = io('localhost:5000')
+    const socket = io('localhost:5000');
+
     useEffect(() => {
         if (!localStorage.getItem('lastFetchTime')) {
             localStorage.setItem('lastFetchTime', openTime.toString());
-            getLatestData();
         }
+
+        getLatestData();
 
         socket.on('past_data', (data) => {
             console.log("latest data is:", data);
@@ -62,6 +65,10 @@ function App() {
 
     async function addToDB(data) {
         try {
+            /* store data.time_stamp as a JS Date object,
+            so we can run date queries using dexie.js */
+            let timeStamp = data.time_stamp;
+            data.time_stamp = new Date(timeStamp);
             const id = await db.sensorData.add(data);
         } catch (error) {
             console.log("Failed to add data: ", error);
@@ -95,7 +102,7 @@ function App() {
                     </Stack>
                     <Grid container justifyContent={"center"}>
                         <Grid item lg={6} md={8} sm={10}>
-                            <Chart/>
+                            <Chart openTime={openTime} closeTime={closeTime}/>
                         </Grid>
                         <Grid item lg={6} md={8} sm={10}>
                             {/*<Chart/>*/}

@@ -3,9 +3,9 @@ import {useEffect, useState} from "react";
 import {useLiveQuery} from "dexie-react-hooks";
 import {db} from "./db";
 
-function Chart() {
+function Chart({ openTime, closeTime }) {
     const motionSensorData = useLiveQuery(() => {
-        return db.sensorData.toArray();
+        return db.sensorData.where('time_stamp').between(openTime, closeTime, true, true).toArray();
     }, [], []);
 
     const dataToDisplay = motionSensorData.map((element) => {
@@ -36,7 +36,8 @@ function Chart() {
                     </linearGradient>
                 </defs>
             </svg>
-            <VictoryChart>
+            <h2 style={{textAlign: "center"}}>Activity data for {openTime.getMonth() + 1}/{openTime.getDate()}/{openTime.getFullYear()}</h2>
+            <VictoryChart title={"Activity Data"}>
                 <VictoryArea
                     data={dataToDisplay}
                     interpolation={"natural"}
