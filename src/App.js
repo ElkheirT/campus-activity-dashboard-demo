@@ -5,9 +5,6 @@ import RefreshIcon from '@mui/icons-material/Refresh';
 import {
     AppBar,
     Box, Button,
-    Card,
-    CardContent,
-    CardMedia,
     Container,
     Grid,
     Stack,
@@ -19,17 +16,26 @@ import io from 'socket.io-client'
 import {db} from './db'
 import {useEffect, useState} from "react";
 import InfoCard from "./InfoCard";
+import Histogram from "./Histogram";
 
 function App() {
     let currentTime = new Date();
     // assume library is open from 7AM to 10PM
     let openTime = new Date(currentTime.getFullYear(), currentTime.getMonth(), currentTime.getDate(), 6, 59, 0);
     let closeTime = new Date(currentTime.getFullYear(), currentTime.getMonth(), currentTime.getDate(), 22, 0, 0);
+
+    let prevOpenTime = new Date(openTime.getTime());
+    let prevCloseTime = new Date(closeTime.getTime());
+
+    prevOpenTime.setDate(prevOpenTime.getDate() - 1);
+    prevCloseTime.setDate(prevCloseTime.getDate() - 1);
+
     const socket = io('localhost:5000');
 
     useEffect(() => {
         if (!localStorage.getItem('lastFetchTime')) {
             localStorage.setItem('lastFetchTime', openTime.toString());
+            getDataFromPrevDay();
         }
 
         getLatestData();
@@ -45,6 +51,10 @@ function App() {
             }
         });
     }, []);
+
+    function getDataFromPrevDay() {
+        getDataInRange(prevOpenTime, prevCloseTime);
+    }
 
     function getLatestData() {
         let lastFetchTime = localStorage.getItem('lastFetchTime');
@@ -100,12 +110,12 @@ function App() {
                             <RefreshIcon fontSize="large"/>
                         </Button>
                     </Stack>
-                    <Grid container justifyContent={"center"}>
+                    <Grid container justifyContent={"center"} spacing={5}>
                         <Grid item lg={6} md={8} sm={10}>
                             <Chart openTime={openTime} closeTime={closeTime}/>
                         </Grid>
                         <Grid item lg={6} md={8} sm={10}>
-                            {/*<Chart/>*/}
+                            <Histogram openTime={prevOpenTime} closeTime={prevCloseTime}/>
                         </Grid>
                     </Grid>
                 </Container>

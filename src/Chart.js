@@ -37,7 +37,7 @@ function Chart({ openTime, closeTime }) {
                 </defs>
             </svg>
             <h2 style={{textAlign: "center"}}>Activity data for {openTime.getMonth() + 1}/{openTime.getDate()}/{openTime.getFullYear()}</h2>
-            <VictoryChart title={"Activity Data"}>
+            <VictoryChart>
                 <VictoryArea
                     data={dataToDisplay}
                     interpolation={"natural"}
@@ -55,7 +55,6 @@ function Chart({ openTime, closeTime }) {
 
                 <VictoryAxis
                     tickValues={dataToDisplay.map(i => i.x)}
-
                     tickFormat={(t) => {
                         if (motionSensorData?.length <= 1) {
                             return "";
@@ -67,7 +66,7 @@ function Chart({ openTime, closeTime }) {
                     style={{axisLabel: {padding: 35, fontSize: 16}}}
                 />
 
-                <VictoryAxis dependentAxis domain={{y: [0, 60]}}
+                <VictoryAxis dependentAxis domain={{y: [0, 80]}}
                              label={"Motion Sensor Hits"}
                              style={{axisLabel: {padding: 35, fontSize: 16}}}
                 />
