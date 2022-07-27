@@ -4,7 +4,6 @@ import {
     VictoryChart,
     VictoryBrushContainer,
     VictoryZoomContainer,
-    VictoryLine
 } from "victory";
 import {useEffect, useState} from "react";
 import {useLiveQuery} from "dexie-react-hooks";
@@ -19,17 +18,25 @@ function Chart({openTime, closeTime}) {
         return {x: new Date(element.time_stamp), y: element.sensor_output};
     });
 
-    let lowDomain = dataToDisplay.length > 5 ? dataToDisplay[dataToDisplay.length - 5].x : openTime
-    let highDomain = dataToDisplay.length > 1 ? dataToDisplay[dataToDisplay.length - 1].x : closeTime
+    let lowDomain = dataToDisplay.length > 5 ? dataToDisplay[dataToDisplay.length - 5].x : 0
+    let highDomain = dataToDisplay.length > 1 ? dataToDisplay[dataToDisplay.length - 1].x : 0
 
-    let [zoomDomain, setZoomDomain] = useState()
-    let [selectedDomain, setSelectedDomain] = useState()
+    useEffect(() => {
+        // console.log('lowDomain is', lowDomain);
+        // console.log('highDomain is', highDomain);
+        handleZoom({x: [lowDomain, highDomain]})
+    }, [lowDomain, highDomain]);
+
+
+    let [zoomDomain, setZoomDomain] = useState();
+    let [selectedDomain, setSelectedDomain] = useState();
 
     function handleZoom(domain) {
         setSelectedDomain(domain);
     }
 
     function handleBrush(domain) {
+        console.log(domain);
         setZoomDomain(domain)
     }
 
@@ -101,7 +108,7 @@ function Chart({openTime, closeTime}) {
                     }}
                     tickCount={3}
                     label={"Time"}
-                    style={{axisLabel: {padding: 35, fontSize: 16}}}
+                    style={{axisLabel: {padding: 30, fontSize: 16}}}
                 />
 
                 <VictoryAxis dependentAxis domain={{y: [0, 80]}}
@@ -109,16 +116,17 @@ function Chart({openTime, closeTime}) {
                              style={{axisLabel: {padding: 35, fontSize: 16}}}
                 />
             </VictoryChart>
-
             <VictoryChart
                 height={60}
                 padding={{top: 0, left: 50, right: 50, bottom: 20}}
                 containerComponent={
                     <VictoryBrushContainer
                         responsive={true}
+                        allowDraw={false}
                         brushDimension="x"
                         brushDomain={selectedDomain}
                         onBrushDomainChange={domain => handleBrush(domain)}
+
                     />
                 }
             >
@@ -133,8 +141,9 @@ function Chart({openTime, closeTime}) {
                 />
 
                 <VictoryAxis
-                    tickValues={[]}
-                    tickFormat={(x) => ""}
+                    tickCount={5}
+                    tickValues={dataToDisplay.map(i => i.x)}
+                    tickFormat={(x) => getTickLabel(x)}
                 />
             </VictoryChart>
         </div>)
