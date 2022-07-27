@@ -1,9 +1,16 @@
-import {VictoryArea, VictoryAxis, VictoryChart, VictoryLabel, VictoryLine} from "victory";
+import {
+    VictoryArea,
+    VictoryAxis,
+    VictoryChart,
+    VictoryBrushContainer,
+    VictoryZoomContainer,
+    VictoryLine
+} from "victory";
 import {useEffect, useState} from "react";
 import {useLiveQuery} from "dexie-react-hooks";
 import {db} from "./db";
 
-function Chart({ openTime, closeTime }) {
+function Chart({openTime, closeTime}) {
     const motionSensorData = useLiveQuery(() => {
         return db.sensorData.where('time_stamp').between(openTime, closeTime, true, true).toArray();
     }, [], []);
@@ -12,9 +19,13 @@ function Chart({ openTime, closeTime }) {
         return {x: new Date(element.time_stamp), y: element.sensor_output};
     });
 
-    function getTickString(msec) {
-        let dateObj = new Date(msec);
-        let hours = dateObj.getHours();
+    let lowDomain = dataToDisplay.length > 5 ? dataToDisplay[dataToDisplay.length - 5].x : openTime
+    let highDomain = dataToDisplay.length > 1 ? dataToDisplay[dataToDisplay.length - 1].x : closeTime
+
+
+    function getTickLabel(msec) {
+        let date = new Date(msec);
+        let hours = date.getHours();
         let period = "AM";
 
         if (hours > 12) {
@@ -22,8 +33,8 @@ function Chart({ openTime, closeTime }) {
             period = "PM";
         }
 
-        let timeString = `${hours}:${String(dateObj.getMinutes()).padStart(2, "0")}${period}`;
-        return timeString;
+        let tickLabel = `${hours}:${String(date.getMinutes()).padStart(2, "0")}${period}`;
+        return tickLabel;
     }
 
     return (
@@ -36,8 +47,19 @@ function Chart({ openTime, closeTime }) {
                     </linearGradient>
                 </defs>
             </svg>
-            <h2 style={{textAlign: "center"}}>Activity data for {openTime.getMonth() + 1}/{openTime.getDate()}/{openTime.getFullYear()}</h2>
-            <VictoryChart>
+            <h2 style={{textAlign: "center"}}>Activity data
+                for {openTime.getMonth() + 1}/{openTime.getDate()}/{openTime.getFullYear()}</h2>
+            <VictoryChart
+                containerComponent={
+                    <VictoryZoomContainer responsive={true}
+                                          zoomDimension="x"
+                                          allowPan={true}
+                                          allowZoom={false}
+                                          zoomDomain={{x: [lowDomain, highDomain]}}
+                    />
+                }
+            >
+
                 <VictoryArea
                     data={dataToDisplay}
                     interpolation={"natural"}
@@ -46,11 +68,12 @@ function Chart({ openTime, closeTime }) {
                             stroke: "#8884d8", fill: "url(#myGradient)"
                         }, parent: {border: "1px solid #ccc"}
                     }}
-                    animate={{
-                        duration: 800,
-                        onEnter: {duration: 0},
-                        onLoad: {duration: 0}
-                    }}
+
+                    // animate={{
+                    //     duration: 700,
+                    //     onEnter: {duration: 0},
+                    //     onLoad: {duration: 0}
+                    // }}
                 />
 
                 <VictoryAxis
@@ -59,7 +82,7 @@ function Chart({ openTime, closeTime }) {
                         if (motionSensorData?.length <= 1) {
                             return "";
                         }
-                        return getTickString(t);
+                        return getTickLabel(t);
                     }}
                     tickCount={3}
                     label={"Time"}
@@ -69,6 +92,32 @@ function Chart({ openTime, closeTime }) {
                 <VictoryAxis dependentAxis domain={{y: [0, 80]}}
                              label={"Motion Sensor Hits"}
                              style={{axisLabel: {padding: 35, fontSize: 16}}}
+                />
+            </VictoryChart>
+
+            <VictoryChart
+                height={60}
+                padding={{top: 0, left: 50, right: 50, bottom: 30}}
+                containerComponent={
+                    <VictoryBrushContainer
+                        responsive={true}
+                        brushDimension="x"
+                    />
+                }
+            >
+                <VictoryArea
+                    data={dataToDisplay}
+                    interpolation={"natural"}
+                    style={{
+                        data: {
+                            stroke: "#8884d8", fill: "url(#myGradient)"
+                        }, parent: {border: "1px solid #ccc"}
+                    }}
+                />
+
+                <VictoryAxis
+                    tickValues={[]}
+                    tickFormat={(x) => ""}
                 />
             </VictoryChart>
         </div>)
