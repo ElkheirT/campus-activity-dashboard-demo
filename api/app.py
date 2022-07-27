@@ -108,7 +108,7 @@ def add_sensor_data():
         message=f'sensor type: {sensor_type}, location: {location}, output: {sensor_output}, time: {time_stamp}'), 200
 
 
-@socketio.on('get_new_data')
+@socketio.on('get_data_stream')
 def on_get_data():
     while True:
         message = message_queue.get()
