@@ -21,7 +21,7 @@ import Histogram from "./Histogram";
 function App() {
     let currentTime = new Date();
     // assume library is open from 7AM to 10PM
-    let openTime = new Date(currentTime.getFullYear(), currentTime.getMonth(), currentTime.getDate(), 6, 59, 0);
+    let openTime = new Date(currentTime.getFullYear(), currentTime.getMonth(), currentTime.getDate(), 7, 0, 0);
     let closeTime = new Date(currentTime.getFullYear(), currentTime.getMonth(), currentTime.getDate(), 22, 0, 0);
 
     let prevOpenTime = new Date(openTime.getTime());
@@ -35,10 +35,11 @@ function App() {
     useEffect(() => {
         if (!localStorage.getItem('lastFetchTime')) {
             localStorage.setItem('lastFetchTime', openTime.toString());
-            getDataFromPrevDay();
         }
 
         getLatestData();
+
+        socket.emit('get_data_stream');
 
         socket.on('past_data', (data) => {
             console.log("latest data is:", data);
@@ -49,6 +50,13 @@ function App() {
                 let mostRecentFetch = data[data.length - 1].time_stamp;
                 localStorage.setItem('lastFetchTime', mostRecentFetch);
             }
+        });
+
+        socket.on('new_data_point', (data) => {
+            console.log('got new data');
+            addToDB(data);
+            let mostRecentFetch = data.time_stamp;
+            localStorage.setItem('lastFetchTime', mostRecentFetch);
         });
     }, []);
 
@@ -63,7 +71,7 @@ function App() {
     }
 
     function getDataInRange(startDate, endDate) {
-        socket.emit('get_past_data', {
+        socket.emit('get_data_in_range', {
             startDate: dateToString(startDate),
             endDate: dateToString(endDate)
         });

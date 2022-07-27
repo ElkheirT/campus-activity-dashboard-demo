@@ -113,11 +113,11 @@ def on_get_data():
     while True:
         message = message_queue.get()
         print("sending data")
-        socketio.emit('new_data', message)
+        socketio.emit('new_data_point', message)
         message_queue.task_done()
 
 
-@socketio.on('get_past_data')
+@socketio.on('get_data_in_range')
 def request_past_data(date_range):
     start_date = datetime.strptime(date_range["startDate"], TIMESTAMP_FORMAT)
     end_date = datetime.strptime(date_range["endDate"], TIMESTAMP_FORMAT)
