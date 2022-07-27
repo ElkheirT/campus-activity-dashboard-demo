@@ -31,22 +31,6 @@ function Histogram({openTime, closeTime}) {
                     parent: {border: "10px solid #ccc"}
                 }}>
                 </VictoryBar>
-                <VictoryAxis dependentAxis domain={{y: [0, 600]}}
-                             label={"Motion Sensor Hits"}
-                             style={{axisLabel: {padding: 36, fontSize: 16}}}
-                />
-                <VictoryAxis
-                    tickValues={dataToDisplay.map(i => i.x)}
-                    tickFormat={(t) => {
-                        if (motionSensorData?.length <= 1) {
-                            return "";
-                        }
-                        return (t);
-                    }}
-                    tickCount={5}
-                    label={"Time"}
-                    style={{axisLabel: {padding: 35, fontSize: 16}}}
-                />
             </VictoryChart>
         </div>
     );
