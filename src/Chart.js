@@ -22,6 +22,17 @@ function Chart({openTime, closeTime}) {
     let lowDomain = dataToDisplay.length > 5 ? dataToDisplay[dataToDisplay.length - 5].x : openTime
     let highDomain = dataToDisplay.length > 1 ? dataToDisplay[dataToDisplay.length - 1].x : closeTime
 
+    let [zoomDomain, setZoomDomain] = useState()
+    let [selectedDomain, setSelectedDomain] = useState()
+
+    function handleZoom(domain) {
+        setSelectedDomain(domain);
+    }
+
+    function handleBrush(domain) {
+        setZoomDomain(domain)
+    }
+
 
     function getTickLabel(msec) {
         let date = new Date(msec);
@@ -37,6 +48,7 @@ function Chart({openTime, closeTime}) {
         return tickLabel;
     }
 
+
     return (
         <div>
             <svg style={{height: 0}}>
@@ -49,13 +61,16 @@ function Chart({openTime, closeTime}) {
             </svg>
             <h2 style={{textAlign: "center"}}>Activity data
                 for {openTime.getMonth() + 1}/{openTime.getDate()}/{openTime.getFullYear()}</h2>
+
             <VictoryChart
                 containerComponent={
-                    <VictoryZoomContainer responsive={true}
-                                          zoomDimension="x"
-                                          allowPan={true}
-                                          allowZoom={false}
-                                          zoomDomain={{x: [lowDomain, highDomain]}}
+                    <VictoryZoomContainer
+                        responsive={true}
+                        zoomDimension="x"
+                        allowPan={true}
+                        allowZoom={false}
+                        zoomDomain={zoomDomain}
+                        onZoomDomainChange={(domain => handleZoom(domain))}
                     />
                 }
             >
@@ -97,11 +112,13 @@ function Chart({openTime, closeTime}) {
 
             <VictoryChart
                 height={60}
-                padding={{top: 0, left: 50, right: 50, bottom: 30}}
+                padding={{top: 0, left: 50, right: 50, bottom: 20}}
                 containerComponent={
                     <VictoryBrushContainer
                         responsive={true}
                         brushDimension="x"
+                        brushDomain={selectedDomain}
+                        onBrushDomainChange={domain => handleBrush(domain)}
                     />
                 }
             >
