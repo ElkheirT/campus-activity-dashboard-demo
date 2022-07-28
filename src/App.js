@@ -42,7 +42,6 @@ function App() {
         socket.emit('get_data_stream');
 
         socket.on('past_data', (data) => {
-            console.log("latest data is:", data);
             if (data.length > 0) {
                 data.forEach((element) => {
                     addToDB(element);
@@ -53,7 +52,6 @@ function App() {
         });
 
         socket.on('new_data_point', (data) => {
-            console.log('got new data');
             addToDB(data);
             let mostRecentFetch = data.time_stamp;
             localStorage.setItem('lastFetchTime', mostRecentFetch);
@@ -66,7 +64,6 @@ function App() {
 
     function getLatestData() {
         let lastFetchTime = localStorage.getItem('lastFetchTime');
-        console.log("lastFetchTime is:", lastFetchTime);
         getDataInRange(new Date(lastFetchTime), closeTime);
     }
 
