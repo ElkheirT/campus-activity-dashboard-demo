@@ -8,6 +8,9 @@ import {
 import {useEffect, useState} from "react";
 import {useLiveQuery} from "dexie-react-hooks";
 import {db} from "./db";
+import {Button, IconButton, Slider, Stack} from "@mui/material";
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 function Chart({openTime, closeTime}) {
     const motionSensorData = useLiveQuery(() => {
@@ -18,28 +21,24 @@ function Chart({openTime, closeTime}) {
         return {x: new Date(element.time_stamp), y: element.sensor_output};
     });
 
-    let lowDomain = dataToDisplay.length > 5 ? dataToDisplay[dataToDisplay.length - 5].x : 0
-    let highDomain = dataToDisplay.length > 1 ? dataToDisplay[dataToDisplay.length - 1].x : 0
+    let lowDomain = dataToDisplay.length > 5 ? dataToDisplay[dataToDisplay.length - 5].x : openTime
+    let highDomain = dataToDisplay.length > 1 ? dataToDisplay[dataToDisplay.length - 1].x : openTime
 
     useEffect(() => {
-        // console.log('lowDomain is', lowDomain);
-        // console.log('highDomain is', highDomain);
-        handleZoom({x: [lowDomain, highDomain]})
-    }, [lowDomain, highDomain]);
-
+        console.log('lowDomain is', lowDomain);
+        console.log('highDomain is', highDomain);
+    }, [motionSensorData]);
 
     let [zoomDomain, setZoomDomain] = useState();
     let [selectedDomain, setSelectedDomain] = useState();
 
     function handleZoom(domain) {
-        setSelectedDomain(domain);
+        selectedDomain(domain);
     }
 
     function handleBrush(domain) {
-        console.log(domain);
         setZoomDomain(domain)
     }
-
 
     function getTickLabel(msec) {
         let date = new Date(msec);
@@ -54,7 +53,6 @@ function Chart({openTime, closeTime}) {
         let tickLabel = `${hours}:${String(date.getMinutes()).padStart(2, "0")}${period}`;
         return tickLabel;
     }
-
 
     return (
         <div>
@@ -81,7 +79,6 @@ function Chart({openTime, closeTime}) {
                     />
                 }
             >
-
                 <VictoryArea
                     data={dataToDisplay}
                     interpolation={"natural"}
@@ -117,16 +114,16 @@ function Chart({openTime, closeTime}) {
                 />
             </VictoryChart>
             <VictoryChart
-                height={60}
-                padding={{top: 0, left: 50, right: 50, bottom: 20}}
+                height={70}
+                padding={{top: 5, left: 50, right: 50, bottom: 30}}
                 containerComponent={
                     <VictoryBrushContainer
                         responsive={true}
-                        allowDraw={false}
+                        allowDrag={true}
+                        allowResize={false}
                         brushDimension="x"
-                        brushDomain={selectedDomain}
+                        brushDomain={{x: [lowDomain, highDomain]}}
                         onBrushDomainChange={domain => handleBrush(domain)}
-
                     />
                 }
             >
@@ -141,11 +138,33 @@ function Chart({openTime, closeTime}) {
                 />
 
                 <VictoryAxis
-                    tickCount={5}
+                    tickCount={4}
                     tickValues={dataToDisplay.map(i => i.x)}
-                    tickFormat={(x) => getTickLabel(x)}
+                    tickFormat={(t) => {
+                        if (motionSensorData?.length <= 1) {
+                            return "";
+                        }
+                        return getTickLabel(t);
+                    }}
                 />
+                <VictoryAxis
+                    dependentAxis
+                    domain={{y: [0, 80]}}
+                    tickFormat={(t) => {
+                        return "";
+                    }}
+                />
+
             </VictoryChart>
+
+            <Stack direction={"row"} justifyContent={"space-between"} ml={5} mr={10}>
+                <IconButton variant={"outlined"}>
+                    <ArrowBackIcon/>
+                </IconButton>
+                <IconButton variant={"outlined"}>
+                    <ArrowForwardIcon/>
+                </IconButton>
+            </Stack>
         </div>)
 }
 
