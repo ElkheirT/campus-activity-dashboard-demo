@@ -33,7 +33,7 @@ function Chart({openTime, closeTime}) {
     let [selectedDomain, setSelectedDomain] = useState();
 
     function handleZoom(domain) {
-        selectedDomain(domain);
+        setSelectedDomain(domain);
     }
 
     function handleBrush(domain) {
