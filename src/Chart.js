@@ -5,7 +5,7 @@ import {
     VictoryBrushContainer,
     VictoryZoomContainer,
 } from "victory";
-import {useEffect, useState} from "react";
+import {useEffect, useMemo, useState} from "react";
 import {useLiveQuery} from "dexie-react-hooks";
 import {db} from "./db";
 import {Button, IconButton, Slider, Stack} from "@mui/material";
@@ -16,21 +16,33 @@ function Chart({openTime, closeTime}) {
     const motionSensorData = useLiveQuery(() => {
         return db.sensorData.where('time_stamp').between(openTime, closeTime, true, true).toArray();
     }, [], []);
+    
+    let [zoomDomain, setZoomDomain] = useState();
+    let [selectedDomain, setSelectedDomain] = useState();
 
-    const dataToDisplay = motionSensorData.map((element) => {
-        return {x: new Date(element.time_stamp), y: element.sensor_output};
-    });
+    const dataToDisplay = useMemo(() => {
+        console.log('Recalculating dataToDisplay');
+        let transformedData = motionSensorData.map((element) => {
+            return {x: new Date(element.time_stamp), y: element.sensor_output};
+        });
+        return transformedData;
+    }, [motionSensorData]);
 
-    let lowDomain = dataToDisplay.length > 5 ? dataToDisplay[dataToDisplay.length - 5].x : openTime
-    let highDomain = dataToDisplay.length > 1 ? dataToDisplay[dataToDisplay.length - 1].x : openTime
+    const lowDomain = useMemo(() => {
+        let newLowDomain = dataToDisplay.length > 5 ? dataToDisplay[dataToDisplay.length - 5].x : openTime;
+        return newLowDomain;
+    }, [motionSensorData]);
+
+    const highDomain = useMemo(() => {
+        let newHighDomain = dataToDisplay.length > 1 ? dataToDisplay[dataToDisplay.length - 1].x : openTime
+        return newHighDomain;
+    }, [motionSensorData]);
 
     useEffect(() => {
         console.log('lowDomain is', lowDomain);
         console.log('highDomain is', highDomain);
     }, [motionSensorData]);
 
-    let [zoomDomain, setZoomDomain] = useState();
-    let [selectedDomain, setSelectedDomain] = useState();
 
     function handleZoom(domain) {
         setSelectedDomain(domain);
