@@ -111,9 +111,9 @@ function App() {
                             title={"Humidity"}
                             text={"67%"}
                         />
-                        <Button onClick={getLatestData}>
-                            <RefreshIcon fontSize="large"/>
-                        </Button>
+                        {/*<Button onClick={getLatestData}>*/}
+                        {/*    <RefreshIcon fontSize="large"/>*/}
+                        {/*</Button>*/}
                     </Stack>
                     <Grid container justifyContent={"center"} spacing={5}>
                         <Grid item lg={6} md={8} sm={10}>
