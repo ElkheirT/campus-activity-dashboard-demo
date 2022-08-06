@@ -1,3 +1,5 @@
+import json
+
 import bcrypt
 import os
 import queue
@@ -36,6 +38,21 @@ def db_create():
 def db_drop():
     db.drop_all()
     print('Database dropped.')
+
+
+@app.cli.command('db_read_file')
+def db_read_file():
+    with open('./data/data.json', 'r') as f:
+        data_list = json.loads(f.read())
+        for data_point in data_list:
+            time_stamp = datetime.strptime(data_point['time_stamp'], TIMESTAMP_FORMAT)
+            sensor_type = data_point['sensor_type']
+            location = data_point['location']
+            sensor_output = data_point['sensor_output']
+            data = SensorData(time_stamp=time_stamp, sensor_type=sensor_type, location=location,
+                              sensor_output=sensor_output)
+            db.session.add(data)
+            db.session.commit()
 
 
 class User(db.Model):
