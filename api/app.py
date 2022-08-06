@@ -135,7 +135,7 @@ def on_get_data():
 
 
 @socketio.on('get_data_in_range')
-def request_past_data(date_range):
+def get_data_in_range(date_range):
     start_date = datetime.strptime(date_range["startDate"], TIMESTAMP_FORMAT)
     end_date = datetime.strptime(date_range["endDate"], TIMESTAMP_FORMAT)
     past_data = SensorData.query.filter(SensorData.time_stamp > start_date, SensorData.time_stamp < end_date)
