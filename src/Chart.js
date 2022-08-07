@@ -21,7 +21,6 @@ function Chart({openTime, closeTime}) {
     let [selectedDomain, setSelectedDomain] = useState();
 
     const dataToDisplay = useMemo(() => {
-        console.log('Recalculating dataToDisplay');
         let transformedData = motionSensorData.map((element) => {
             return {x: new Date(element.time_stamp), y: element.sensor_output};
         });
@@ -34,13 +33,12 @@ function Chart({openTime, closeTime}) {
     }, [motionSensorData]);
 
     const highDomain = useMemo(() => {
-        let newHighDomain = dataToDisplay.length > 1 ? dataToDisplay[dataToDisplay.length - 1].x : openTime
+        let newHighDomain = dataToDisplay.length > 1 ? dataToDisplay[dataToDisplay.length - 1].x : openTime;
         return newHighDomain;
     }, [motionSensorData]);
 
     useEffect(() => {
-        console.log('lowDomain is', lowDomain);
-        console.log('highDomain is', highDomain);
+        setZoomDomain({x: [lowDomain, highDomain]});
     }, [motionSensorData]);
 
 
@@ -84,7 +82,7 @@ function Chart({openTime, closeTime}) {
                     <VictoryZoomContainer
                         responsive={true}
                         zoomDimension="x"
-                        allowPan={true}
+                        allowPan={false}
                         allowZoom={false}
                         zoomDomain={zoomDomain}
                         onZoomDomainChange={(domain => handleZoom(domain))}
