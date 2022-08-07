@@ -7,7 +7,7 @@ import {
     Box, Button,
     Container,
     Grid,
-    Stack,
+    Stack, TextField,
     Toolbar,
     Typography
 } from "@mui/material";
@@ -17,6 +17,8 @@ import {db} from './db'
 import {useEffect, useState} from "react";
 import InfoCard from "./InfoCard";
 import Histogram from "./Histogram";
+import {DesktopDatePicker, LocalizationProvider} from "@mui/x-date-pickers";
+import {AdapterLuxon} from '@mui/x-date-pickers/AdapterLuxon';
 
 function App() {
     let currentTime = new Date();
@@ -32,6 +34,27 @@ function App() {
 
     const socket = io('localhost:5000');
 
+    const [histogramDate, setHistogramDate] = useState(prevOpenTime);
+    const [histogramData, setHistogramData] = useState([]);
+
+    const handleDateChange = (newDate) => {
+        let newJSDate = newDate.toJSDate();
+        setHistogramDate(newJSDate);
+        let queryString = `${newJSDate.getFullYear()}-${newJSDate.getMonth() + 1}-${newJSDate.getDate()}`;
+        socket.emit('get_binned_data', queryString);
+    };
+
+    const handleHistogramDataChange = (newData) => {
+        let dataAsJSON = JSON.parse(newData);
+        let dataAsArray = [];
+        let keys = Object.keys(dataAsJSON);
+        for (const key of keys) {
+            let entry = dataAsJSON[key];
+            dataAsArray.push({x: key, y: entry});
+        }
+        setHistogramData(dataAsArray);
+    }
+
     useEffect(() => {
         if (!localStorage.getItem('lastFetchTime')) {
             localStorage.setItem('lastFetchTime', openTime.toString());
@@ -39,9 +62,17 @@ function App() {
 
         getLatestData();
 
+        let queryString = `${prevOpenTime.getFullYear()}-${prevOpenTime.getMonth() + 1}-${prevOpenTime.getDate()}`;
+        socket.emit('get_binned_data', queryString);
+
         socket.emit('get_data_stream');
 
+        socket.on('binned_data', (data) => {
+            handleHistogramDataChange(data);
+        });
+
         socket.on('past_data', (data) => {
+            console.log('got past data', data);
             if (data.length > 0) {
                 data.forEach((element) => {
                     addToDB(element);
@@ -57,10 +88,6 @@ function App() {
             localStorage.setItem('lastFetchTime', mostRecentFetch);
         });
     }, []);
-
-    function getDataFromPrevDay() {
-        getDataInRange(prevOpenTime, prevCloseTime);
-    }
 
     function getLatestData() {
         let lastFetchTime = localStorage.getItem('lastFetchTime');
@@ -90,42 +117,49 @@ function App() {
         }
     }
 
-    return (<div className="App">
-            <Box>
-                <AppBar position={"static"}>
-                    <Toolbar>
-                        <Typography variant={"h6"}>
-                            Campus Activity Dashboard
-                        </Typography>
-                    </Toolbar>
-                </AppBar>
-                <Container maxWidth={"xl"}>
-                    <Stack direction={"row"} justifyContent={"center"} spacing={2} sx={{m: 4}}>
-                        <InfoCard
-                            icon={temperatureIcon}
-                            title={"Temp"}
-                            text={"70°"}
-                        />
-                        <InfoCard
-                            icon={humidityIcon}
-                            title={"Humidity"}
-                            text={"67%"}
-                        />
-                        {/*<Button onClick={getLatestData}>*/}
-                        {/*    <RefreshIcon fontSize="large"/>*/}
-                        {/*</Button>*/}
-                    </Stack>
-                    <Grid container justifyContent={"center"} spacing={5}>
-                        <Grid item lg={6} md={8} sm={10}>
-                            <Chart openTime={openTime} closeTime={closeTime}/>
+    return (
+        <LocalizationProvider dateAdapter={AdapterLuxon}>
+            <div className="App">
+                <Box>
+                    <AppBar position={"static"}>
+                        <Toolbar>
+                            <Typography variant={"h6"}>
+                                Campus Activity Dashboard
+                            </Typography>
+                        </Toolbar>
+                    </AppBar>
+                    <Container maxWidth={"xl"}>
+                        <Stack direction={"row"} justifyContent={"center"} spacing={2} sx={{m: 4}}>
+                            <InfoCard
+                                icon={temperatureIcon}
+                                title={"Temp"}
+                                text={"70°"}
+                            />
+                            <InfoCard
+                                icon={humidityIcon}
+                                title={"Humidity"}
+                                text={"67%"}
+                            />
+                        </Stack>
+                        <Grid container justifyContent={"center"} spacing={5}>
+                            <Grid item lg={6} md={8} sm={10}>
+                                <Chart openTime={openTime} closeTime={closeTime}/>
+                            </Grid>
+                            <Grid item lg={6} md={8} sm={10} textAlign={'right'}>
+                                <Histogram date={histogramDate} data={histogramData}/>
+                                <DesktopDatePicker
+                                    label="Date desktop"
+                                    inputFormat="MM/dd/yyyy"
+                                    value={histogramDate}
+                                    onChange={handleDateChange}
+                                    renderInput={(params) => <TextField {...params} />}
+                                />
+                            </Grid>
                         </Grid>
-                        <Grid item lg={6} md={8} sm={10}>
-                            <Histogram openTime={prevOpenTime} closeTime={prevCloseTime}/>
-                        </Grid>
-                    </Grid>
-                </Container>
-            </Box>
-        </div>
+                    </Container>
+                </Box>
+            </div>
+        </LocalizationProvider>
     );
 }
 

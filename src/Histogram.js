@@ -3,15 +3,7 @@ import {VictoryHistogram, VictoryAxis, VictoryChart, VictoryLabel, VictoryLine, 
 import {useLiveQuery} from "dexie-react-hooks";
 import {db} from "./db";
 
-function Histogram({openTime, closeTime}) {
-    const motionSensorData = useLiveQuery(() => {
-        return db.sensorData.where('time_stamp').between(openTime, closeTime, true, true).toArray();
-    }, [], []);
-
-    const dataToDisplay = motionSensorData.map((element) => {
-        return {x: new Date(element.time_stamp), y: element.sensor_output};
-    });
-
+function Histogram({date, data}) {
     let testData = [
         {x: "7AM-10AM", y: 243},
         {x: "11AM-2PM", y: 451},
@@ -21,15 +13,16 @@ function Histogram({openTime, closeTime}) {
 
     return (
         <div>
-            <h2 style={{textAlign: "center"}}>Peak times for {openTime.getMonth() + 1}/{openTime.getDate()}/{openTime.getFullYear()}</h2>
+            <h2 style={{textAlign: "center"}}>Peak times
+                for {date.getMonth() + 1}/{date.getDate()}/{date.getFullYear()}</h2>
             <VictoryChart>
-                <VictoryBar data={testData} alignment={"start"} barRatio={.8}
-                style={{
-                    data: {
-                        fill: "rgba(35, 64, 153, 0.5)"
-                    },
-                    parent: {border: "10px solid #ccc"}
-                }}>
+                <VictoryBar data={data} alignment={"start"} barRatio={.8}
+                            style={{
+                                data: {
+                                    fill: "rgba(35, 64, 153, 0.5)"
+                                },
+                                parent: {border: "10px solid #ccc"}
+                            }}>
                 </VictoryBar>
             </VictoryChart>
         </div>
