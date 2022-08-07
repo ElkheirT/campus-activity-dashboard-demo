@@ -3,349 +3,349 @@
     "time_stamp": "2022-08-01 07:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 35
+    "sensor_output": 23
   },
   {
     "time_stamp": "2022-08-01 07:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 21
+    "sensor_output": 32
   },
   {
     "time_stamp": "2022-08-01 07:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 30
+    "sensor_output": 39
   },
   {
     "time_stamp": "2022-08-01 07:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 27
+    "sensor_output": 22
   },
   {
     "time_stamp": "2022-08-01 08:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 36
+    "sensor_output": 38
   },
   {
     "time_stamp": "2022-08-01 08:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 35
+    "sensor_output": 26
   },
   {
     "time_stamp": "2022-08-01 08:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 20
+    "sensor_output": 29
   },
   {
     "time_stamp": "2022-08-01 08:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 33
+    "sensor_output": 27
   },
   {
     "time_stamp": "2022-08-01 09:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 24
+    "sensor_output": 27
   },
   {
     "time_stamp": "2022-08-01 09:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 40
+    "sensor_output": 39
   },
   {
     "time_stamp": "2022-08-01 09:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 26
+    "sensor_output": 28
   },
   {
     "time_stamp": "2022-08-01 09:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 36
+    "sensor_output": 38
   },
   {
     "time_stamp": "2022-08-01 10:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 24
+    "sensor_output": 31
   },
   {
     "time_stamp": "2022-08-01 10:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 24
+    "sensor_output": 29
   },
   {
     "time_stamp": "2022-08-01 10:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 35
+    "sensor_output": 26
   },
   {
     "time_stamp": "2022-08-01 10:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 34
+    "sensor_output": 21
   },
   {
     "time_stamp": "2022-08-01 11:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 55
+    "sensor_output": 49
   },
   {
     "time_stamp": "2022-08-01 11:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 60
+    "sensor_output": 43
   },
   {
     "time_stamp": "2022-08-01 11:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 50
+    "sensor_output": 52
   },
   {
     "time_stamp": "2022-08-01 11:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 58
+    "sensor_output": 59
   },
   {
     "time_stamp": "2022-08-01 12:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 44
+    "sensor_output": 58
   },
   {
     "time_stamp": "2022-08-01 12:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 41
+    "sensor_output": 56
   },
   {
     "time_stamp": "2022-08-01 12:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 41
+    "sensor_output": 47
   },
   {
     "time_stamp": "2022-08-01 12:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 41
+    "sensor_output": 44
   },
   {
     "time_stamp": "2022-08-01 13:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 56
+    "sensor_output": 57
   },
   {
     "time_stamp": "2022-08-01 13:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 57
+    "sensor_output": 43
   },
   {
     "time_stamp": "2022-08-01 13:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 55
+    "sensor_output": 52
   },
   {
     "time_stamp": "2022-08-01 13:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 44
+    "sensor_output": 56
   },
   {
     "time_stamp": "2022-08-01 14:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 56
+    "sensor_output": 46
   },
   {
     "time_stamp": "2022-08-01 14:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 60
+    "sensor_output": 55
   },
   {
     "time_stamp": "2022-08-01 14:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 44
+    "sensor_output": 42
   },
   {
     "time_stamp": "2022-08-01 14:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 49
+    "sensor_output": 53
   },
   {
     "time_stamp": "2022-08-01 15:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 64
+    "sensor_output": 52
   },
   {
     "time_stamp": "2022-08-01 15:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 70
+    "sensor_output": 59
   },
   {
     "time_stamp": "2022-08-01 15:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 52
+    "sensor_output": 63
   },
   {
     "time_stamp": "2022-08-01 15:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 69
+    "sensor_output": 56
   },
   {
     "time_stamp": "2022-08-01 16:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 60
+    "sensor_output": 70
   },
   {
     "time_stamp": "2022-08-01 16:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 54
+    "sensor_output": 52
   },
   {
     "time_stamp": "2022-08-01 16:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 51
+    "sensor_output": 69
   },
   {
     "time_stamp": "2022-08-01 16:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 52
+    "sensor_output": 53
   },
   {
     "time_stamp": "2022-08-01 17:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 65
+    "sensor_output": 66
   },
   {
     "time_stamp": "2022-08-01 17:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 51
+    "sensor_output": 50
   },
   {
     "time_stamp": "2022-08-01 17:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 65
+    "sensor_output": 55
   },
   {
     "time_stamp": "2022-08-01 17:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 54
+    "sensor_output": 68
   },
   {
     "time_stamp": "2022-08-01 18:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 58
+    "sensor_output": 66
   },
   {
     "time_stamp": "2022-08-01 18:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 62
+    "sensor_output": 63
   },
   {
     "time_stamp": "2022-08-01 18:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 66
+    "sensor_output": 52
   },
   {
     "time_stamp": "2022-08-01 18:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 55
+    "sensor_output": 52
   },
   {
     "time_stamp": "2022-08-01 19:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 23
+    "sensor_output": 30
   },
   {
     "time_stamp": "2022-08-01 19:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 29
+    "sensor_output": 37
   },
   {
     "time_stamp": "2022-08-01 19:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 38
+    "sensor_output": 37
   },
   {
     "time_stamp": "2022-08-01 19:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 34
+    "sensor_output": 39
   },
   {
     "time_stamp": "2022-08-01 20:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 39
+    "sensor_output": 23
   },
   {
     "time_stamp": "2022-08-01 20:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 24
+    "sensor_output": 23
   },
   {
     "time_stamp": "2022-08-01 20:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 24
+    "sensor_output": 30
   },
   {
     "time_stamp": "2022-08-01 20:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 35
+    "sensor_output": 21
   },
   {
     "time_stamp": "2022-08-01 21:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 21
+    "sensor_output": 29
   },
   {
     "time_stamp": "2022-08-01 21:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 30
+    "sensor_output": 37
   },
   {
     "time_stamp": "2022-08-01 21:30:00",
@@ -357,37 +357,37 @@
     "time_stamp": "2022-08-01 21:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 37
+    "sensor_output": 23
   },
   {
     "time_stamp": "2022-08-01 22:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 35
+    "sensor_output": 23
   },
   {
     "time_stamp": "2022-08-02 07:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 22
+    "sensor_output": 36
   },
   {
     "time_stamp": "2022-08-02 07:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 22
+    "sensor_output": 29
   },
   {
     "time_stamp": "2022-08-02 07:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 28
+    "sensor_output": 24
   },
   {
     "time_stamp": "2022-08-02 07:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 36
+    "sensor_output": 30
   },
   {
     "time_stamp": "2022-08-02 08:00:00",
@@ -399,55 +399,55 @@
     "time_stamp": "2022-08-02 08:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 30
+    "sensor_output": 21
   },
   {
     "time_stamp": "2022-08-02 08:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 25
+    "sensor_output": 20
   },
   {
     "time_stamp": "2022-08-02 08:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 20
+    "sensor_output": 35
   },
   {
     "time_stamp": "2022-08-02 09:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 26
+    "sensor_output": 27
   },
   {
     "time_stamp": "2022-08-02 09:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 32
+    "sensor_output": 35
   },
   {
     "time_stamp": "2022-08-02 09:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 37
+    "sensor_output": 24
   },
   {
     "time_stamp": "2022-08-02 09:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 29
+    "sensor_output": 40
   },
   {
     "time_stamp": "2022-08-02 10:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 23
+    "sensor_output": 36
   },
   {
     "time_stamp": "2022-08-02 10:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 38
+    "sensor_output": 34
   },
   {
     "time_stamp": "2022-08-02 10:30:00",
@@ -465,19 +465,19 @@
     "time_stamp": "2022-08-02 11:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 54
+    "sensor_output": 45
   },
   {
     "time_stamp": "2022-08-02 11:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 53
+    "sensor_output": 45
   },
   {
     "time_stamp": "2022-08-02 11:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 47
+    "sensor_output": 45
   },
   {
     "time_stamp": "2022-08-02 11:45:00",
@@ -489,181 +489,181 @@
     "time_stamp": "2022-08-02 12:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 54
+    "sensor_output": 58
   },
   {
     "time_stamp": "2022-08-02 12:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 46
+    "sensor_output": 45
   },
   {
     "time_stamp": "2022-08-02 12:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 57
+    "sensor_output": 42
   },
   {
     "time_stamp": "2022-08-02 12:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 53
+    "sensor_output": 58
   },
   {
     "time_stamp": "2022-08-02 13:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 57
+    "sensor_output": 59
   },
   {
     "time_stamp": "2022-08-02 13:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 53
+    "sensor_output": 48
   },
   {
     "time_stamp": "2022-08-02 13:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 47
+    "sensor_output": 42
   },
   {
     "time_stamp": "2022-08-02 13:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 54
+    "sensor_output": 59
   },
   {
     "time_stamp": "2022-08-02 14:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 53
+    "sensor_output": 52
   },
   {
     "time_stamp": "2022-08-02 14:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 59
+    "sensor_output": 47
   },
   {
     "time_stamp": "2022-08-02 14:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 56
+    "sensor_output": 52
   },
   {
     "time_stamp": "2022-08-02 14:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 54
+    "sensor_output": 46
   },
   {
     "time_stamp": "2022-08-02 15:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 64
+    "sensor_output": 54
   },
   {
     "time_stamp": "2022-08-02 15:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 55
+    "sensor_output": 61
   },
   {
     "time_stamp": "2022-08-02 15:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 60
+    "sensor_output": 54
   },
   {
     "time_stamp": "2022-08-02 15:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 68
+    "sensor_output": 70
   },
   {
     "time_stamp": "2022-08-02 16:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 50
+    "sensor_output": 69
   },
   {
     "time_stamp": "2022-08-02 16:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 61
+    "sensor_output": 67
   },
   {
     "time_stamp": "2022-08-02 16:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 58
+    "sensor_output": 66
   },
   {
     "time_stamp": "2022-08-02 16:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 53
+    "sensor_output": 58
   },
   {
     "time_stamp": "2022-08-02 17:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 53
+    "sensor_output": 55
   },
   {
     "time_stamp": "2022-08-02 17:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 55
+    "sensor_output": 64
   },
   {
     "time_stamp": "2022-08-02 17:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 59
+    "sensor_output": 62
   },
   {
     "time_stamp": "2022-08-02 17:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 50
+    "sensor_output": 51
   },
   {
     "time_stamp": "2022-08-02 18:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 60
+    "sensor_output": 61
   },
   {
     "time_stamp": "2022-08-02 18:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 60
+    "sensor_output": 67
   },
   {
     "time_stamp": "2022-08-02 18:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 59
+    "sensor_output": 57
   },
   {
     "time_stamp": "2022-08-02 18:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 50
+    "sensor_output": 55
   },
   {
     "time_stamp": "2022-08-02 19:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 28
+    "sensor_output": 34
   },
   {
     "time_stamp": "2022-08-02 19:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 24
+    "sensor_output": 27
   },
   {
     "time_stamp": "2022-08-02 19:30:00",
@@ -675,265 +675,265 @@
     "time_stamp": "2022-08-02 19:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 30
+    "sensor_output": 38
   },
   {
     "time_stamp": "2022-08-02 20:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 34
+    "sensor_output": 35
   },
   {
     "time_stamp": "2022-08-02 20:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 37
+    "sensor_output": 34
   },
   {
     "time_stamp": "2022-08-02 20:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 26
+    "sensor_output": 23
   },
   {
     "time_stamp": "2022-08-02 20:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 24
+    "sensor_output": 22
   },
   {
     "time_stamp": "2022-08-02 21:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 28
+    "sensor_output": 35
   },
   {
     "time_stamp": "2022-08-02 21:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 40
+    "sensor_output": 31
   },
   {
     "time_stamp": "2022-08-02 21:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 30
+    "sensor_output": 38
   },
   {
     "time_stamp": "2022-08-02 21:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 33
+    "sensor_output": 27
   },
   {
     "time_stamp": "2022-08-02 22:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 21
+    "sensor_output": 34
   },
   {
     "time_stamp": "2022-08-03 07:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 33
+    "sensor_output": 26
   },
   {
     "time_stamp": "2022-08-03 07:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 33
+    "sensor_output": 20
   },
   {
     "time_stamp": "2022-08-03 07:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 29
+    "sensor_output": 38
   },
   {
     "time_stamp": "2022-08-03 07:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 30
+    "sensor_output": 33
   },
   {
     "time_stamp": "2022-08-03 08:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 34
+    "sensor_output": 36
   },
   {
     "time_stamp": "2022-08-03 08:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 37
+    "sensor_output": 25
   },
   {
     "time_stamp": "2022-08-03 08:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 24
+    "sensor_output": 39
   },
   {
     "time_stamp": "2022-08-03 08:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 21
+    "sensor_output": 20
   },
   {
     "time_stamp": "2022-08-03 09:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 40
+    "sensor_output": 23
   },
   {
     "time_stamp": "2022-08-03 09:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 23
+    "sensor_output": 36
   },
   {
     "time_stamp": "2022-08-03 09:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 33
+    "sensor_output": 36
   },
   {
     "time_stamp": "2022-08-03 09:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 31
+    "sensor_output": 34
   },
   {
     "time_stamp": "2022-08-03 10:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 29
+    "sensor_output": 40
   },
   {
     "time_stamp": "2022-08-03 10:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 33
+    "sensor_output": 25
   },
   {
     "time_stamp": "2022-08-03 10:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 21
+    "sensor_output": 33
   },
   {
     "time_stamp": "2022-08-03 10:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 29
+    "sensor_output": 30
   },
   {
     "time_stamp": "2022-08-03 11:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 58
+    "sensor_output": 41
   },
   {
     "time_stamp": "2022-08-03 11:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 49
+    "sensor_output": 51
   },
   {
     "time_stamp": "2022-08-03 11:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 60
+    "sensor_output": 58
   },
   {
     "time_stamp": "2022-08-03 11:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 54
+    "sensor_output": 49
   },
   {
     "time_stamp": "2022-08-03 12:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 58
+    "sensor_output": 40
   },
   {
     "time_stamp": "2022-08-03 12:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 58
+    "sensor_output": 44
   },
   {
     "time_stamp": "2022-08-03 12:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 47
+    "sensor_output": 52
   },
   {
     "time_stamp": "2022-08-03 12:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 54
+    "sensor_output": 42
   },
   {
     "time_stamp": "2022-08-03 13:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 56
+    "sensor_output": 46
   },
   {
     "time_stamp": "2022-08-03 13:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 50
+    "sensor_output": 41
   },
   {
     "time_stamp": "2022-08-03 13:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 53
+    "sensor_output": 46
   },
   {
     "time_stamp": "2022-08-03 13:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 56
+    "sensor_output": 43
   },
   {
     "time_stamp": "2022-08-03 14:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 41
+    "sensor_output": 45
   },
   {
     "time_stamp": "2022-08-03 14:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 42
+    "sensor_output": 49
   },
   {
     "time_stamp": "2022-08-03 14:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 50
+    "sensor_output": 53
   },
   {
     "time_stamp": "2022-08-03 14:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 51
+    "sensor_output": 54
   },
   {
     "time_stamp": "2022-08-03 15:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 61
+    "sensor_output": 62
   },
   {
     "time_stamp": "2022-08-03 15:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 54
+    "sensor_output": 64
   },
   {
     "time_stamp": "2022-08-03 15:30:00",
@@ -945,19 +945,19 @@
     "time_stamp": "2022-08-03 15:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 52
+    "sensor_output": 66
   },
   {
     "time_stamp": "2022-08-03 16:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 51
+    "sensor_output": 58
   },
   {
     "time_stamp": "2022-08-03 16:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 65
+    "sensor_output": 69
   },
   {
     "time_stamp": "2022-08-03 16:30:00",
@@ -969,361 +969,361 @@
     "time_stamp": "2022-08-03 16:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 59
+    "sensor_output": 63
   },
   {
     "time_stamp": "2022-08-03 17:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 51
+    "sensor_output": 56
   },
   {
     "time_stamp": "2022-08-03 17:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 67
+    "sensor_output": 60
   },
   {
     "time_stamp": "2022-08-03 17:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 58
+    "sensor_output": 61
   },
   {
     "time_stamp": "2022-08-03 17:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 56
+    "sensor_output": 51
   },
   {
     "time_stamp": "2022-08-03 18:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 51
+    "sensor_output": 50
   },
   {
     "time_stamp": "2022-08-03 18:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 69
+    "sensor_output": 70
   },
   {
     "time_stamp": "2022-08-03 18:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 61
+    "sensor_output": 54
   },
   {
     "time_stamp": "2022-08-03 18:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 69
+    "sensor_output": 60
   },
   {
     "time_stamp": "2022-08-03 19:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 34
+    "sensor_output": 27
   },
   {
     "time_stamp": "2022-08-03 19:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 35
+    "sensor_output": 34
   },
   {
     "time_stamp": "2022-08-03 19:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 36
+    "sensor_output": 40
   },
   {
     "time_stamp": "2022-08-03 19:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 26
+    "sensor_output": 20
   },
   {
     "time_stamp": "2022-08-03 20:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 37
+    "sensor_output": 21
   },
   {
     "time_stamp": "2022-08-03 20:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 22
+    "sensor_output": 38
   },
   {
     "time_stamp": "2022-08-03 20:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 27
+    "sensor_output": 24
   },
   {
     "time_stamp": "2022-08-03 20:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 28
+    "sensor_output": 36
   },
   {
     "time_stamp": "2022-08-03 21:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 20
+    "sensor_output": 34
   },
   {
     "time_stamp": "2022-08-03 21:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 23
+    "sensor_output": 33
   },
   {
     "time_stamp": "2022-08-03 21:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 23
+    "sensor_output": 37
   },
   {
     "time_stamp": "2022-08-03 21:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 26
+    "sensor_output": 20
   },
   {
     "time_stamp": "2022-08-03 22:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 21
+    "sensor_output": 35
   },
   {
     "time_stamp": "2022-08-04 07:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 30
+    "sensor_output": 32
   },
   {
     "time_stamp": "2022-08-04 07:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 21
+    "sensor_output": 35
   },
   {
     "time_stamp": "2022-08-04 07:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 26
+    "sensor_output": 33
   },
   {
     "time_stamp": "2022-08-04 07:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 27
+    "sensor_output": 25
   },
   {
     "time_stamp": "2022-08-04 08:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 23
+    "sensor_output": 35
   },
   {
     "time_stamp": "2022-08-04 08:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 28
+    "sensor_output": 27
   },
   {
     "time_stamp": "2022-08-04 08:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 40
+    "sensor_output": 24
   },
   {
     "time_stamp": "2022-08-04 08:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 28
+    "sensor_output": 27
   },
   {
     "time_stamp": "2022-08-04 09:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 22
+    "sensor_output": 25
   },
   {
     "time_stamp": "2022-08-04 09:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 22
+    "sensor_output": 33
   },
   {
     "time_stamp": "2022-08-04 09:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 21
+    "sensor_output": 36
   },
   {
     "time_stamp": "2022-08-04 09:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 24
+    "sensor_output": 22
   },
   {
     "time_stamp": "2022-08-04 10:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 28
+    "sensor_output": 40
   },
   {
     "time_stamp": "2022-08-04 10:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 38
+    "sensor_output": 39
   },
   {
     "time_stamp": "2022-08-04 10:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 31
+    "sensor_output": 24
   },
   {
     "time_stamp": "2022-08-04 10:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 36
+    "sensor_output": 31
   },
   {
     "time_stamp": "2022-08-04 11:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 48
+    "sensor_output": 58
   },
   {
     "time_stamp": "2022-08-04 11:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 42
+    "sensor_output": 55
   },
   {
     "time_stamp": "2022-08-04 11:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 50
+    "sensor_output": 42
   },
   {
     "time_stamp": "2022-08-04 11:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 52
+    "sensor_output": 46
   },
   {
     "time_stamp": "2022-08-04 12:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 51
+    "sensor_output": 50
   },
   {
     "time_stamp": "2022-08-04 12:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 57
+    "sensor_output": 48
   },
   {
     "time_stamp": "2022-08-04 12:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 41
+    "sensor_output": 55
   },
   {
     "time_stamp": "2022-08-04 12:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 52
+    "sensor_output": 42
   },
   {
     "time_stamp": "2022-08-04 13:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 53
+    "sensor_output": 57
   },
   {
     "time_stamp": "2022-08-04 13:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 57
+    "sensor_output": 60
   },
   {
     "time_stamp": "2022-08-04 13:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 59
+    "sensor_output": 54
   },
   {
     "time_stamp": "2022-08-04 13:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 55
+    "sensor_output": 43
   },
   {
     "time_stamp": "2022-08-04 14:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 47
+    "sensor_output": 59
   },
   {
     "time_stamp": "2022-08-04 14:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 51
+    "sensor_output": 49
   },
   {
     "time_stamp": "2022-08-04 14:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 50
+    "sensor_output": 58
   },
   {
     "time_stamp": "2022-08-04 14:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 45
+    "sensor_output": 49
   },
   {
     "time_stamp": "2022-08-04 15:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 69
+    "sensor_output": 54
   },
   {
     "time_stamp": "2022-08-04 15:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 66
+    "sensor_output": 52
   },
   {
     "time_stamp": "2022-08-04 15:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 52
+    "sensor_output": 62
   },
   {
     "time_stamp": "2022-08-04 15:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 62
+    "sensor_output": 51
   },
   {
     "time_stamp": "2022-08-04 16:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 68
+    "sensor_output": 50
   },
   {
     "time_stamp": "2022-08-04 16:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 59
+    "sensor_output": 60
   },
   {
     "time_stamp": "2022-08-04 16:30:00",
@@ -1335,139 +1335,139 @@
     "time_stamp": "2022-08-04 16:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 63
+    "sensor_output": 69
   },
   {
     "time_stamp": "2022-08-04 17:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 65
+    "sensor_output": 66
   },
   {
     "time_stamp": "2022-08-04 17:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 62
+    "sensor_output": 64
   },
   {
     "time_stamp": "2022-08-04 17:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 66
+    "sensor_output": 65
   },
   {
     "time_stamp": "2022-08-04 17:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 53
+    "sensor_output": 60
   },
   {
     "time_stamp": "2022-08-04 18:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 54
+    "sensor_output": 53
   },
   {
     "time_stamp": "2022-08-04 18:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 53
+    "sensor_output": 69
   },
   {
     "time_stamp": "2022-08-04 18:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 66
+    "sensor_output": 69
   },
   {
     "time_stamp": "2022-08-04 18:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 60
+    "sensor_output": 66
   },
   {
     "time_stamp": "2022-08-04 19:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 31
+    "sensor_output": 29
   },
   {
     "time_stamp": "2022-08-04 19:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 26
+    "sensor_output": 20
   },
   {
     "time_stamp": "2022-08-04 19:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 29
+    "sensor_output": 34
   },
   {
     "time_stamp": "2022-08-04 19:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 20
+    "sensor_output": 22
   },
   {
     "time_stamp": "2022-08-04 20:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 21
+    "sensor_output": 22
   },
   {
     "time_stamp": "2022-08-04 20:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 31
+    "sensor_output": 35
   },
   {
     "time_stamp": "2022-08-04 20:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 36
+    "sensor_output": 35
   },
   {
     "time_stamp": "2022-08-04 20:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 28
+    "sensor_output": 30
   },
   {
     "time_stamp": "2022-08-04 21:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 38
+    "sensor_output": 22
   },
   {
     "time_stamp": "2022-08-04 21:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 36
+    "sensor_output": 38
   },
   {
     "time_stamp": "2022-08-04 21:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 24
+    "sensor_output": 21
   },
   {
     "time_stamp": "2022-08-04 21:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 32
+    "sensor_output": 40
   },
   {
     "time_stamp": "2022-08-04 22:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 29
+    "sensor_output": 40
   },
   {
     "time_stamp": "2022-08-05 07:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 20
+    "sensor_output": 32
   },
   {
     "time_stamp": "2022-08-05 07:15:00",
@@ -1479,61 +1479,61 @@
     "time_stamp": "2022-08-05 07:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 21
+    "sensor_output": 29
   },
   {
     "time_stamp": "2022-08-05 07:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 37
+    "sensor_output": 23
   },
   {
     "time_stamp": "2022-08-05 08:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 25
+    "sensor_output": 28
   },
   {
     "time_stamp": "2022-08-05 08:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 39
+    "sensor_output": 37
   },
   {
     "time_stamp": "2022-08-05 08:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 32
+    "sensor_output": 20
   },
   {
     "time_stamp": "2022-08-05 08:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 29
+    "sensor_output": 30
   },
   {
     "time_stamp": "2022-08-05 09:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 35
+    "sensor_output": 39
   },
   {
     "time_stamp": "2022-08-05 09:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 36
+    "sensor_output": 25
   },
   {
     "time_stamp": "2022-08-05 09:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 39
+    "sensor_output": 22
   },
   {
     "time_stamp": "2022-08-05 09:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 21
+    "sensor_output": 30
   },
   {
     "time_stamp": "2022-08-05 10:00:00",
@@ -1545,211 +1545,211 @@
     "time_stamp": "2022-08-05 10:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 20
+    "sensor_output": 40
   },
   {
     "time_stamp": "2022-08-05 10:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 23
+    "sensor_output": 25
   },
   {
     "time_stamp": "2022-08-05 10:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 36
+    "sensor_output": 38
   },
   {
     "time_stamp": "2022-08-05 11:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 41
+    "sensor_output": 60
   },
   {
     "time_stamp": "2022-08-05 11:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 59
+    "sensor_output": 50
   },
   {
     "time_stamp": "2022-08-05 11:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 44
+    "sensor_output": 54
   },
   {
     "time_stamp": "2022-08-05 11:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 41
+    "sensor_output": 56
   },
   {
     "time_stamp": "2022-08-05 12:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 50
+    "sensor_output": 55
   },
   {
     "time_stamp": "2022-08-05 12:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 49
+    "sensor_output": 52
   },
   {
     "time_stamp": "2022-08-05 12:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 42
+    "sensor_output": 46
   },
   {
     "time_stamp": "2022-08-05 12:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 59
+    "sensor_output": 48
   },
   {
     "time_stamp": "2022-08-05 13:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 44
+    "sensor_output": 55
   },
   {
     "time_stamp": "2022-08-05 13:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 58
+    "sensor_output": 40
   },
   {
     "time_stamp": "2022-08-05 13:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 55
+    "sensor_output": 44
   },
   {
     "time_stamp": "2022-08-05 13:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 57
+    "sensor_output": 46
   },
   {
     "time_stamp": "2022-08-05 14:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 45
+    "sensor_output": 48
   },
   {
     "time_stamp": "2022-08-05 14:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 51
+    "sensor_output": 53
   },
   {
     "time_stamp": "2022-08-05 14:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 50
+    "sensor_output": 42
   },
   {
     "time_stamp": "2022-08-05 14:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 58
+    "sensor_output": 44
   },
   {
     "time_stamp": "2022-08-05 15:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 66
+    "sensor_output": 62
   },
   {
     "time_stamp": "2022-08-05 15:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 70
+    "sensor_output": 67
   },
   {
     "time_stamp": "2022-08-05 15:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 57
+    "sensor_output": 64
   },
   {
     "time_stamp": "2022-08-05 15:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 63
+    "sensor_output": 64
   },
   {
     "time_stamp": "2022-08-05 16:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 67
+    "sensor_output": 65
   },
   {
     "time_stamp": "2022-08-05 16:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 56
+    "sensor_output": 55
   },
   {
     "time_stamp": "2022-08-05 16:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 52
+    "sensor_output": 67
   },
   {
     "time_stamp": "2022-08-05 16:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 57
+    "sensor_output": 70
   },
   {
     "time_stamp": "2022-08-05 17:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 57
+    "sensor_output": 68
   },
   {
     "time_stamp": "2022-08-05 17:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 64
+    "sensor_output": 57
   },
   {
     "time_stamp": "2022-08-05 17:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 61
+    "sensor_output": 66
   },
   {
     "time_stamp": "2022-08-05 17:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 63
+    "sensor_output": 55
   },
   {
     "time_stamp": "2022-08-05 18:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 57
+    "sensor_output": 55
   },
   {
     "time_stamp": "2022-08-05 18:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 62
+    "sensor_output": 51
   },
   {
     "time_stamp": "2022-08-05 18:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 51
+    "sensor_output": 56
   },
   {
     "time_stamp": "2022-08-05 18:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 50
+    "sensor_output": 53
   },
   {
     "time_stamp": "2022-08-05 19:00:00",
@@ -1761,72 +1761,2634 @@
     "time_stamp": "2022-08-05 19:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 36
+    "sensor_output": 31
   },
   {
     "time_stamp": "2022-08-05 19:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 30
+    "sensor_output": 37
   },
   {
     "time_stamp": "2022-08-05 19:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 22
+    "sensor_output": 36
   },
   {
     "time_stamp": "2022-08-05 20:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 33
+    "sensor_output": 34
   },
   {
     "time_stamp": "2022-08-05 20:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 20
+    "sensor_output": 39
   },
   {
     "time_stamp": "2022-08-05 20:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 27
+    "sensor_output": 21
   },
   {
     "time_stamp": "2022-08-05 20:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 34
+    "sensor_output": 40
   },
   {
     "time_stamp": "2022-08-05 21:00:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 27
+    "sensor_output": 33
   },
   {
     "time_stamp": "2022-08-05 21:15:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 21
+    "sensor_output": 35
   },
   {
     "time_stamp": "2022-08-05 21:30:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 32
+    "sensor_output": 39
   },
   {
     "time_stamp": "2022-08-05 21:45:00",
     "sensor_type": "motion",
     "location": "entrance",
-    "sensor_output": 22
+    "sensor_output": 32
   },
   {
     "time_stamp": "2022-08-05 22:00:00",
     "sensor_type": "motion",
     "location": "entrance",
+    "sensor_output": 35
+  },
+  {
+    "time_stamp": "2022-08-06 07:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 22
+  },
+  {
+    "time_stamp": "2022-08-06 07:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 20
+  },
+  {
+    "time_stamp": "2022-08-06 07:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 38
+  },
+  {
+    "time_stamp": "2022-08-06 07:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 26
+  },
+  {
+    "time_stamp": "2022-08-06 08:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 23
+  },
+  {
+    "time_stamp": "2022-08-06 08:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 35
+  },
+  {
+    "time_stamp": "2022-08-06 08:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
     "sensor_output": 25
+  },
+  {
+    "time_stamp": "2022-08-06 08:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 33
+  },
+  {
+    "time_stamp": "2022-08-06 09:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 33
+  },
+  {
+    "time_stamp": "2022-08-06 09:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 33
+  },
+  {
+    "time_stamp": "2022-08-06 09:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 22
+  },
+  {
+    "time_stamp": "2022-08-06 09:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 39
+  },
+  {
+    "time_stamp": "2022-08-06 10:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 34
+  },
+  {
+    "time_stamp": "2022-08-06 10:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 20
+  },
+  {
+    "time_stamp": "2022-08-06 10:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 40
+  },
+  {
+    "time_stamp": "2022-08-06 10:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 40
+  },
+  {
+    "time_stamp": "2022-08-06 11:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 57
+  },
+  {
+    "time_stamp": "2022-08-06 11:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 51
+  },
+  {
+    "time_stamp": "2022-08-06 11:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 46
+  },
+  {
+    "time_stamp": "2022-08-06 11:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 51
+  },
+  {
+    "time_stamp": "2022-08-06 12:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 57
+  },
+  {
+    "time_stamp": "2022-08-06 12:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 60
+  },
+  {
+    "time_stamp": "2022-08-06 12:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 60
+  },
+  {
+    "time_stamp": "2022-08-06 12:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 53
+  },
+  {
+    "time_stamp": "2022-08-06 13:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 47
+  },
+  {
+    "time_stamp": "2022-08-06 13:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 46
+  },
+  {
+    "time_stamp": "2022-08-06 13:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 51
+  },
+  {
+    "time_stamp": "2022-08-06 13:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 44
+  },
+  {
+    "time_stamp": "2022-08-06 14:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 45
+  },
+  {
+    "time_stamp": "2022-08-06 14:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 42
+  },
+  {
+    "time_stamp": "2022-08-06 14:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 53
+  },
+  {
+    "time_stamp": "2022-08-06 14:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 56
+  },
+  {
+    "time_stamp": "2022-08-06 15:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 68
+  },
+  {
+    "time_stamp": "2022-08-06 15:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 67
+  },
+  {
+    "time_stamp": "2022-08-06 15:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 69
+  },
+  {
+    "time_stamp": "2022-08-06 15:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 51
+  },
+  {
+    "time_stamp": "2022-08-06 16:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 52
+  },
+  {
+    "time_stamp": "2022-08-06 16:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 53
+  },
+  {
+    "time_stamp": "2022-08-06 16:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 60
+  },
+  {
+    "time_stamp": "2022-08-06 16:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 60
+  },
+  {
+    "time_stamp": "2022-08-06 17:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 70
+  },
+  {
+    "time_stamp": "2022-08-06 17:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 54
+  },
+  {
+    "time_stamp": "2022-08-06 17:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 69
+  },
+  {
+    "time_stamp": "2022-08-06 17:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 61
+  },
+  {
+    "time_stamp": "2022-08-06 18:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 58
+  },
+  {
+    "time_stamp": "2022-08-06 18:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 55
+  },
+  {
+    "time_stamp": "2022-08-06 18:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 70
+  },
+  {
+    "time_stamp": "2022-08-06 18:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 70
+  },
+  {
+    "time_stamp": "2022-08-06 19:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 23
+  },
+  {
+    "time_stamp": "2022-08-06 19:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 38
+  },
+  {
+    "time_stamp": "2022-08-06 19:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 28
+  },
+  {
+    "time_stamp": "2022-08-06 19:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 22
+  },
+  {
+    "time_stamp": "2022-08-06 20:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 27
+  },
+  {
+    "time_stamp": "2022-08-06 20:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 37
+  },
+  {
+    "time_stamp": "2022-08-06 20:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 37
+  },
+  {
+    "time_stamp": "2022-08-06 20:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 25
+  },
+  {
+    "time_stamp": "2022-08-06 21:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 30
+  },
+  {
+    "time_stamp": "2022-08-06 21:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 30
+  },
+  {
+    "time_stamp": "2022-08-06 21:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 40
+  },
+  {
+    "time_stamp": "2022-08-06 21:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 22
+  },
+  {
+    "time_stamp": "2022-08-06 22:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 39
+  },
+  {
+    "time_stamp": "2022-08-07 07:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 40
+  },
+  {
+    "time_stamp": "2022-08-07 07:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 38
+  },
+  {
+    "time_stamp": "2022-08-07 07:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 27
+  },
+  {
+    "time_stamp": "2022-08-07 07:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 36
+  },
+  {
+    "time_stamp": "2022-08-07 08:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 28
+  },
+  {
+    "time_stamp": "2022-08-07 08:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 35
+  },
+  {
+    "time_stamp": "2022-08-07 08:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 26
+  },
+  {
+    "time_stamp": "2022-08-07 08:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 39
+  },
+  {
+    "time_stamp": "2022-08-07 09:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 36
+  },
+  {
+    "time_stamp": "2022-08-07 09:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 21
+  },
+  {
+    "time_stamp": "2022-08-07 09:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 36
+  },
+  {
+    "time_stamp": "2022-08-07 09:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 26
+  },
+  {
+    "time_stamp": "2022-08-07 10:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 31
+  },
+  {
+    "time_stamp": "2022-08-07 10:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 32
+  },
+  {
+    "time_stamp": "2022-08-07 10:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 35
+  },
+  {
+    "time_stamp": "2022-08-07 10:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 25
+  },
+  {
+    "time_stamp": "2022-08-07 11:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 47
+  },
+  {
+    "time_stamp": "2022-08-07 11:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 57
+  },
+  {
+    "time_stamp": "2022-08-07 11:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 40
+  },
+  {
+    "time_stamp": "2022-08-07 11:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 55
+  },
+  {
+    "time_stamp": "2022-08-07 12:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 46
+  },
+  {
+    "time_stamp": "2022-08-07 12:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 58
+  },
+  {
+    "time_stamp": "2022-08-07 12:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 54
+  },
+  {
+    "time_stamp": "2022-08-07 12:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 58
+  },
+  {
+    "time_stamp": "2022-08-07 13:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 46
+  },
+  {
+    "time_stamp": "2022-08-07 13:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 43
+  },
+  {
+    "time_stamp": "2022-08-07 13:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 47
+  },
+  {
+    "time_stamp": "2022-08-07 13:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 45
+  },
+  {
+    "time_stamp": "2022-08-07 14:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 49
+  },
+  {
+    "time_stamp": "2022-08-07 14:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 45
+  },
+  {
+    "time_stamp": "2022-08-07 14:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 44
+  },
+  {
+    "time_stamp": "2022-08-07 14:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 58
+  },
+  {
+    "time_stamp": "2022-08-07 15:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 60
+  },
+  {
+    "time_stamp": "2022-08-07 15:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 56
+  },
+  {
+    "time_stamp": "2022-08-07 15:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 66
+  },
+  {
+    "time_stamp": "2022-08-07 15:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 56
+  },
+  {
+    "time_stamp": "2022-08-07 16:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 54
+  },
+  {
+    "time_stamp": "2022-08-07 16:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 53
+  },
+  {
+    "time_stamp": "2022-08-07 16:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 52
+  },
+  {
+    "time_stamp": "2022-08-07 16:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 55
+  },
+  {
+    "time_stamp": "2022-08-07 17:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 70
+  },
+  {
+    "time_stamp": "2022-08-07 17:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 60
+  },
+  {
+    "time_stamp": "2022-08-07 17:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 69
+  },
+  {
+    "time_stamp": "2022-08-07 17:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 62
+  },
+  {
+    "time_stamp": "2022-08-07 18:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 61
+  },
+  {
+    "time_stamp": "2022-08-07 18:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 57
+  },
+  {
+    "time_stamp": "2022-08-07 18:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 68
+  },
+  {
+    "time_stamp": "2022-08-07 18:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 67
+  },
+  {
+    "time_stamp": "2022-08-07 19:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 37
+  },
+  {
+    "time_stamp": "2022-08-07 19:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 27
+  },
+  {
+    "time_stamp": "2022-08-07 19:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 29
+  },
+  {
+    "time_stamp": "2022-08-07 19:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 28
+  },
+  {
+    "time_stamp": "2022-08-07 20:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 28
+  },
+  {
+    "time_stamp": "2022-08-07 20:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 35
+  },
+  {
+    "time_stamp": "2022-08-07 20:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 22
+  },
+  {
+    "time_stamp": "2022-08-07 20:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 25
+  },
+  {
+    "time_stamp": "2022-08-07 21:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 25
+  },
+  {
+    "time_stamp": "2022-08-07 21:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 37
+  },
+  {
+    "time_stamp": "2022-08-07 21:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 25
+  },
+  {
+    "time_stamp": "2022-08-07 21:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 28
+  },
+  {
+    "time_stamp": "2022-08-07 22:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 37
+  },
+  {
+    "time_stamp": "2022-08-08 07:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 23
+  },
+  {
+    "time_stamp": "2022-08-08 07:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 40
+  },
+  {
+    "time_stamp": "2022-08-08 07:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 40
+  },
+  {
+    "time_stamp": "2022-08-08 07:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 30
+  },
+  {
+    "time_stamp": "2022-08-08 08:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 28
+  },
+  {
+    "time_stamp": "2022-08-08 08:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 37
+  },
+  {
+    "time_stamp": "2022-08-08 08:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 31
+  },
+  {
+    "time_stamp": "2022-08-08 08:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 34
+  },
+  {
+    "time_stamp": "2022-08-08 09:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 29
+  },
+  {
+    "time_stamp": "2022-08-08 09:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 20
+  },
+  {
+    "time_stamp": "2022-08-08 09:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 38
+  },
+  {
+    "time_stamp": "2022-08-08 09:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 38
+  },
+  {
+    "time_stamp": "2022-08-08 10:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 31
+  },
+  {
+    "time_stamp": "2022-08-08 10:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 20
+  },
+  {
+    "time_stamp": "2022-08-08 10:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 39
+  },
+  {
+    "time_stamp": "2022-08-08 10:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 31
+  },
+  {
+    "time_stamp": "2022-08-08 11:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 45
+  },
+  {
+    "time_stamp": "2022-08-08 11:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 60
+  },
+  {
+    "time_stamp": "2022-08-08 11:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 47
+  },
+  {
+    "time_stamp": "2022-08-08 11:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 58
+  },
+  {
+    "time_stamp": "2022-08-08 12:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 54
+  },
+  {
+    "time_stamp": "2022-08-08 12:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 56
+  },
+  {
+    "time_stamp": "2022-08-08 12:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 58
+  },
+  {
+    "time_stamp": "2022-08-08 12:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 48
+  },
+  {
+    "time_stamp": "2022-08-08 13:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 49
+  },
+  {
+    "time_stamp": "2022-08-08 13:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 57
+  },
+  {
+    "time_stamp": "2022-08-08 13:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 58
+  },
+  {
+    "time_stamp": "2022-08-08 13:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 50
+  },
+  {
+    "time_stamp": "2022-08-08 14:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 47
+  },
+  {
+    "time_stamp": "2022-08-08 14:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 42
+  },
+  {
+    "time_stamp": "2022-08-08 14:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 54
+  },
+  {
+    "time_stamp": "2022-08-08 14:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 52
+  },
+  {
+    "time_stamp": "2022-08-08 15:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 67
+  },
+  {
+    "time_stamp": "2022-08-08 15:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 50
+  },
+  {
+    "time_stamp": "2022-08-08 15:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 59
+  },
+  {
+    "time_stamp": "2022-08-08 15:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 60
+  },
+  {
+    "time_stamp": "2022-08-08 16:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 61
+  },
+  {
+    "time_stamp": "2022-08-08 16:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 67
+  },
+  {
+    "time_stamp": "2022-08-08 16:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 57
+  },
+  {
+    "time_stamp": "2022-08-08 16:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 70
+  },
+  {
+    "time_stamp": "2022-08-08 17:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 53
+  },
+  {
+    "time_stamp": "2022-08-08 17:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 50
+  },
+  {
+    "time_stamp": "2022-08-08 17:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 50
+  },
+  {
+    "time_stamp": "2022-08-08 17:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 56
+  },
+  {
+    "time_stamp": "2022-08-08 18:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 69
+  },
+  {
+    "time_stamp": "2022-08-08 18:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 64
+  },
+  {
+    "time_stamp": "2022-08-08 18:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 66
+  },
+  {
+    "time_stamp": "2022-08-08 18:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 56
+  },
+  {
+    "time_stamp": "2022-08-08 19:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 34
+  },
+  {
+    "time_stamp": "2022-08-08 19:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 31
+  },
+  {
+    "time_stamp": "2022-08-08 19:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 27
+  },
+  {
+    "time_stamp": "2022-08-08 19:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 27
+  },
+  {
+    "time_stamp": "2022-08-08 20:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 30
+  },
+  {
+    "time_stamp": "2022-08-08 20:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 37
+  },
+  {
+    "time_stamp": "2022-08-08 20:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 22
+  },
+  {
+    "time_stamp": "2022-08-08 20:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 23
+  },
+  {
+    "time_stamp": "2022-08-08 21:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 36
+  },
+  {
+    "time_stamp": "2022-08-08 21:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 28
+  },
+  {
+    "time_stamp": "2022-08-08 21:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 39
+  },
+  {
+    "time_stamp": "2022-08-08 21:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 33
+  },
+  {
+    "time_stamp": "2022-08-08 22:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 29
+  },
+  {
+    "time_stamp": "2022-08-09 07:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 33
+  },
+  {
+    "time_stamp": "2022-08-09 07:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 35
+  },
+  {
+    "time_stamp": "2022-08-09 07:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 20
+  },
+  {
+    "time_stamp": "2022-08-09 07:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 30
+  },
+  {
+    "time_stamp": "2022-08-09 08:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 39
+  },
+  {
+    "time_stamp": "2022-08-09 08:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 39
+  },
+  {
+    "time_stamp": "2022-08-09 08:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 33
+  },
+  {
+    "time_stamp": "2022-08-09 08:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 31
+  },
+  {
+    "time_stamp": "2022-08-09 09:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 39
+  },
+  {
+    "time_stamp": "2022-08-09 09:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 21
+  },
+  {
+    "time_stamp": "2022-08-09 09:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 25
+  },
+  {
+    "time_stamp": "2022-08-09 09:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 28
+  },
+  {
+    "time_stamp": "2022-08-09 10:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 38
+  },
+  {
+    "time_stamp": "2022-08-09 10:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 35
+  },
+  {
+    "time_stamp": "2022-08-09 10:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 30
+  },
+  {
+    "time_stamp": "2022-08-09 10:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 30
+  },
+  {
+    "time_stamp": "2022-08-09 11:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 52
+  },
+  {
+    "time_stamp": "2022-08-09 11:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 44
+  },
+  {
+    "time_stamp": "2022-08-09 11:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 47
+  },
+  {
+    "time_stamp": "2022-08-09 11:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 48
+  },
+  {
+    "time_stamp": "2022-08-09 12:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 45
+  },
+  {
+    "time_stamp": "2022-08-09 12:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 51
+  },
+  {
+    "time_stamp": "2022-08-09 12:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 41
+  },
+  {
+    "time_stamp": "2022-08-09 12:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 45
+  },
+  {
+    "time_stamp": "2022-08-09 13:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 43
+  },
+  {
+    "time_stamp": "2022-08-09 13:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 50
+  },
+  {
+    "time_stamp": "2022-08-09 13:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 42
+  },
+  {
+    "time_stamp": "2022-08-09 13:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 46
+  },
+  {
+    "time_stamp": "2022-08-09 14:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 40
+  },
+  {
+    "time_stamp": "2022-08-09 14:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 47
+  },
+  {
+    "time_stamp": "2022-08-09 14:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 55
+  },
+  {
+    "time_stamp": "2022-08-09 14:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 54
+  },
+  {
+    "time_stamp": "2022-08-09 15:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 51
+  },
+  {
+    "time_stamp": "2022-08-09 15:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 50
+  },
+  {
+    "time_stamp": "2022-08-09 15:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 68
+  },
+  {
+    "time_stamp": "2022-08-09 15:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 64
+  },
+  {
+    "time_stamp": "2022-08-09 16:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 57
+  },
+  {
+    "time_stamp": "2022-08-09 16:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 67
+  },
+  {
+    "time_stamp": "2022-08-09 16:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 51
+  },
+  {
+    "time_stamp": "2022-08-09 16:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 68
+  },
+  {
+    "time_stamp": "2022-08-09 17:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 55
+  },
+  {
+    "time_stamp": "2022-08-09 17:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 52
+  },
+  {
+    "time_stamp": "2022-08-09 17:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 53
+  },
+  {
+    "time_stamp": "2022-08-09 17:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 60
+  },
+  {
+    "time_stamp": "2022-08-09 18:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 57
+  },
+  {
+    "time_stamp": "2022-08-09 18:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 61
+  },
+  {
+    "time_stamp": "2022-08-09 18:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 68
+  },
+  {
+    "time_stamp": "2022-08-09 18:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 63
+  },
+  {
+    "time_stamp": "2022-08-09 19:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 30
+  },
+  {
+    "time_stamp": "2022-08-09 19:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 37
+  },
+  {
+    "time_stamp": "2022-08-09 19:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 38
+  },
+  {
+    "time_stamp": "2022-08-09 19:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 29
+  },
+  {
+    "time_stamp": "2022-08-09 20:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 28
+  },
+  {
+    "time_stamp": "2022-08-09 20:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 35
+  },
+  {
+    "time_stamp": "2022-08-09 20:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 32
+  },
+  {
+    "time_stamp": "2022-08-09 20:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 24
+  },
+  {
+    "time_stamp": "2022-08-09 21:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 20
+  },
+  {
+    "time_stamp": "2022-08-09 21:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 32
+  },
+  {
+    "time_stamp": "2022-08-09 21:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 35
+  },
+  {
+    "time_stamp": "2022-08-09 21:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 31
+  },
+  {
+    "time_stamp": "2022-08-09 22:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 32
+  },
+  {
+    "time_stamp": "2022-08-10 07:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 23
+  },
+  {
+    "time_stamp": "2022-08-10 07:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 22
+  },
+  {
+    "time_stamp": "2022-08-10 07:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 27
+  },
+  {
+    "time_stamp": "2022-08-10 07:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 30
+  },
+  {
+    "time_stamp": "2022-08-10 08:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 27
+  },
+  {
+    "time_stamp": "2022-08-10 08:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 40
+  },
+  {
+    "time_stamp": "2022-08-10 08:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 37
+  },
+  {
+    "time_stamp": "2022-08-10 08:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 39
+  },
+  {
+    "time_stamp": "2022-08-10 09:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 24
+  },
+  {
+    "time_stamp": "2022-08-10 09:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 32
+  },
+  {
+    "time_stamp": "2022-08-10 09:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 34
+  },
+  {
+    "time_stamp": "2022-08-10 09:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 35
+  },
+  {
+    "time_stamp": "2022-08-10 10:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 32
+  },
+  {
+    "time_stamp": "2022-08-10 10:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 27
+  },
+  {
+    "time_stamp": "2022-08-10 10:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 22
+  },
+  {
+    "time_stamp": "2022-08-10 10:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 32
+  },
+  {
+    "time_stamp": "2022-08-10 11:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 58
+  },
+  {
+    "time_stamp": "2022-08-10 11:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 53
+  },
+  {
+    "time_stamp": "2022-08-10 11:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 52
+  },
+  {
+    "time_stamp": "2022-08-10 11:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 40
+  },
+  {
+    "time_stamp": "2022-08-10 12:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 45
+  },
+  {
+    "time_stamp": "2022-08-10 12:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 59
+  },
+  {
+    "time_stamp": "2022-08-10 12:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 48
+  },
+  {
+    "time_stamp": "2022-08-10 12:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 56
+  },
+  {
+    "time_stamp": "2022-08-10 13:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 51
+  },
+  {
+    "time_stamp": "2022-08-10 13:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 45
+  },
+  {
+    "time_stamp": "2022-08-10 13:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 46
+  },
+  {
+    "time_stamp": "2022-08-10 13:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 58
+  },
+  {
+    "time_stamp": "2022-08-10 14:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 47
+  },
+  {
+    "time_stamp": "2022-08-10 14:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 59
+  },
+  {
+    "time_stamp": "2022-08-10 14:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 55
+  },
+  {
+    "time_stamp": "2022-08-10 14:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 53
+  },
+  {
+    "time_stamp": "2022-08-10 15:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 61
+  },
+  {
+    "time_stamp": "2022-08-10 15:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 51
+  },
+  {
+    "time_stamp": "2022-08-10 15:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 54
+  },
+  {
+    "time_stamp": "2022-08-10 15:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 70
+  },
+  {
+    "time_stamp": "2022-08-10 16:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 68
+  },
+  {
+    "time_stamp": "2022-08-10 16:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 50
+  },
+  {
+    "time_stamp": "2022-08-10 16:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 57
+  },
+  {
+    "time_stamp": "2022-08-10 16:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 51
+  },
+  {
+    "time_stamp": "2022-08-10 17:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 54
+  },
+  {
+    "time_stamp": "2022-08-10 17:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 62
+  },
+  {
+    "time_stamp": "2022-08-10 17:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 52
+  },
+  {
+    "time_stamp": "2022-08-10 17:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 63
+  },
+  {
+    "time_stamp": "2022-08-10 18:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 61
+  },
+  {
+    "time_stamp": "2022-08-10 18:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 60
+  },
+  {
+    "time_stamp": "2022-08-10 18:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 61
+  },
+  {
+    "time_stamp": "2022-08-10 18:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 51
+  },
+  {
+    "time_stamp": "2022-08-10 19:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 28
+  },
+  {
+    "time_stamp": "2022-08-10 19:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 27
+  },
+  {
+    "time_stamp": "2022-08-10 19:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 23
+  },
+  {
+    "time_stamp": "2022-08-10 19:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 22
+  },
+  {
+    "time_stamp": "2022-08-10 20:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 22
+  },
+  {
+    "time_stamp": "2022-08-10 20:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 35
+  },
+  {
+    "time_stamp": "2022-08-10 20:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 21
+  },
+  {
+    "time_stamp": "2022-08-10 20:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 39
+  },
+  {
+    "time_stamp": "2022-08-10 21:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 36
+  },
+  {
+    "time_stamp": "2022-08-10 21:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 24
+  },
+  {
+    "time_stamp": "2022-08-10 21:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 40
+  },
+  {
+    "time_stamp": "2022-08-10 21:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 40
+  },
+  {
+    "time_stamp": "2022-08-10 22:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 25
+  },
+  {
+    "time_stamp": "2022-08-11 07:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 39
+  },
+  {
+    "time_stamp": "2022-08-11 07:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 25
+  },
+  {
+    "time_stamp": "2022-08-11 07:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 37
+  },
+  {
+    "time_stamp": "2022-08-11 07:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 31
+  },
+  {
+    "time_stamp": "2022-08-11 08:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 37
+  },
+  {
+    "time_stamp": "2022-08-11 08:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 34
+  },
+  {
+    "time_stamp": "2022-08-11 08:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 21
+  },
+  {
+    "time_stamp": "2022-08-11 08:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 29
+  },
+  {
+    "time_stamp": "2022-08-11 09:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 22
+  },
+  {
+    "time_stamp": "2022-08-11 09:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 20
+  },
+  {
+    "time_stamp": "2022-08-11 09:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 29
+  },
+  {
+    "time_stamp": "2022-08-11 09:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 30
+  },
+  {
+    "time_stamp": "2022-08-11 10:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 30
+  },
+  {
+    "time_stamp": "2022-08-11 10:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 26
+  },
+  {
+    "time_stamp": "2022-08-11 10:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 26
+  },
+  {
+    "time_stamp": "2022-08-11 10:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 33
+  },
+  {
+    "time_stamp": "2022-08-11 11:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 58
+  },
+  {
+    "time_stamp": "2022-08-11 11:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 60
+  },
+  {
+    "time_stamp": "2022-08-11 11:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 51
+  },
+  {
+    "time_stamp": "2022-08-11 11:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 58
+  },
+  {
+    "time_stamp": "2022-08-11 12:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 59
+  },
+  {
+    "time_stamp": "2022-08-11 12:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 47
+  },
+  {
+    "time_stamp": "2022-08-11 12:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 41
+  },
+  {
+    "time_stamp": "2022-08-11 12:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 43
+  },
+  {
+    "time_stamp": "2022-08-11 13:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 60
+  },
+  {
+    "time_stamp": "2022-08-11 13:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 49
+  },
+  {
+    "time_stamp": "2022-08-11 13:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 40
+  },
+  {
+    "time_stamp": "2022-08-11 13:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 49
+  },
+  {
+    "time_stamp": "2022-08-11 14:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 53
+  },
+  {
+    "time_stamp": "2022-08-11 14:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 50
+  },
+  {
+    "time_stamp": "2022-08-11 14:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 50
+  },
+  {
+    "time_stamp": "2022-08-11 14:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 46
+  },
+  {
+    "time_stamp": "2022-08-11 15:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 70
+  },
+  {
+    "time_stamp": "2022-08-11 15:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 59
+  },
+  {
+    "time_stamp": "2022-08-11 15:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 59
+  },
+  {
+    "time_stamp": "2022-08-11 15:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 65
+  },
+  {
+    "time_stamp": "2022-08-11 16:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 60
+  },
+  {
+    "time_stamp": "2022-08-11 16:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 51
+  },
+  {
+    "time_stamp": "2022-08-11 16:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 65
+  },
+  {
+    "time_stamp": "2022-08-11 16:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 68
+  },
+  {
+    "time_stamp": "2022-08-11 17:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 61
+  },
+  {
+    "time_stamp": "2022-08-11 17:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 57
+  },
+  {
+    "time_stamp": "2022-08-11 17:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 61
+  },
+  {
+    "time_stamp": "2022-08-11 17:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 59
+  },
+  {
+    "time_stamp": "2022-08-11 18:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 55
+  },
+  {
+    "time_stamp": "2022-08-11 18:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 64
+  },
+  {
+    "time_stamp": "2022-08-11 18:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 55
+  },
+  {
+    "time_stamp": "2022-08-11 18:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 68
+  },
+  {
+    "time_stamp": "2022-08-11 19:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 26
+  },
+  {
+    "time_stamp": "2022-08-11 19:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 38
+  },
+  {
+    "time_stamp": "2022-08-11 19:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 39
+  },
+  {
+    "time_stamp": "2022-08-11 19:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 38
+  },
+  {
+    "time_stamp": "2022-08-11 20:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 35
+  },
+  {
+    "time_stamp": "2022-08-11 20:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 34
+  },
+  {
+    "time_stamp": "2022-08-11 20:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 31
+  },
+  {
+    "time_stamp": "2022-08-11 20:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 31
+  },
+  {
+    "time_stamp": "2022-08-11 21:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 28
+  },
+  {
+    "time_stamp": "2022-08-11 21:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 27
+  },
+  {
+    "time_stamp": "2022-08-11 21:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 39
+  },
+  {
+    "time_stamp": "2022-08-11 21:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 36
+  },
+  {
+    "time_stamp": "2022-08-11 22:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 28
+  },
+  {
+    "time_stamp": "2022-08-12 07:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 25
+  },
+  {
+    "time_stamp": "2022-08-12 07:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 36
+  },
+  {
+    "time_stamp": "2022-08-12 07:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 20
+  },
+  {
+    "time_stamp": "2022-08-12 07:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 22
+  },
+  {
+    "time_stamp": "2022-08-12 08:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 31
+  },
+  {
+    "time_stamp": "2022-08-12 08:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 36
+  },
+  {
+    "time_stamp": "2022-08-12 08:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 23
+  },
+  {
+    "time_stamp": "2022-08-12 08:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 38
+  },
+  {
+    "time_stamp": "2022-08-12 09:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 33
+  },
+  {
+    "time_stamp": "2022-08-12 09:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 34
+  },
+  {
+    "time_stamp": "2022-08-12 09:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 36
+  },
+  {
+    "time_stamp": "2022-08-12 09:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 22
+  },
+  {
+    "time_stamp": "2022-08-12 10:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 34
+  },
+  {
+    "time_stamp": "2022-08-12 10:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 22
+  },
+  {
+    "time_stamp": "2022-08-12 10:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 30
+  },
+  {
+    "time_stamp": "2022-08-12 10:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 33
+  },
+  {
+    "time_stamp": "2022-08-12 11:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 43
+  },
+  {
+    "time_stamp": "2022-08-12 11:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 54
+  },
+  {
+    "time_stamp": "2022-08-12 11:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 53
+  },
+  {
+    "time_stamp": "2022-08-12 11:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 55
+  },
+  {
+    "time_stamp": "2022-08-12 12:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 46
+  },
+  {
+    "time_stamp": "2022-08-12 12:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 56
+  },
+  {
+    "time_stamp": "2022-08-12 12:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 43
+  },
+  {
+    "time_stamp": "2022-08-12 12:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 42
+  },
+  {
+    "time_stamp": "2022-08-12 13:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 53
+  },
+  {
+    "time_stamp": "2022-08-12 13:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 49
+  },
+  {
+    "time_stamp": "2022-08-12 13:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 50
+  },
+  {
+    "time_stamp": "2022-08-12 13:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 52
+  },
+  {
+    "time_stamp": "2022-08-12 14:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 53
+  },
+  {
+    "time_stamp": "2022-08-12 14:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 45
+  },
+  {
+    "time_stamp": "2022-08-12 14:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 46
+  },
+  {
+    "time_stamp": "2022-08-12 14:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 55
+  },
+  {
+    "time_stamp": "2022-08-12 15:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 70
+  },
+  {
+    "time_stamp": "2022-08-12 15:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 57
+  },
+  {
+    "time_stamp": "2022-08-12 15:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 63
+  },
+  {
+    "time_stamp": "2022-08-12 15:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 62
+  },
+  {
+    "time_stamp": "2022-08-12 16:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 51
+  },
+  {
+    "time_stamp": "2022-08-12 16:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 61
+  },
+  {
+    "time_stamp": "2022-08-12 16:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 57
+  },
+  {
+    "time_stamp": "2022-08-12 16:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 56
+  },
+  {
+    "time_stamp": "2022-08-12 17:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 56
+  },
+  {
+    "time_stamp": "2022-08-12 17:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 54
+  },
+  {
+    "time_stamp": "2022-08-12 17:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 65
+  },
+  {
+    "time_stamp": "2022-08-12 17:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 55
+  },
+  {
+    "time_stamp": "2022-08-12 18:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 60
+  },
+  {
+    "time_stamp": "2022-08-12 18:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 56
+  },
+  {
+    "time_stamp": "2022-08-12 18:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 57
+  },
+  {
+    "time_stamp": "2022-08-12 18:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 63
+  },
+  {
+    "time_stamp": "2022-08-12 19:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 30
+  },
+  {
+    "time_stamp": "2022-08-12 19:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 24
+  },
+  {
+    "time_stamp": "2022-08-12 19:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 22
+  },
+  {
+    "time_stamp": "2022-08-12 19:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 30
+  },
+  {
+    "time_stamp": "2022-08-12 20:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 36
+  },
+  {
+    "time_stamp": "2022-08-12 20:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 27
+  },
+  {
+    "time_stamp": "2022-08-12 20:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 28
+  },
+  {
+    "time_stamp": "2022-08-12 20:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 32
+  },
+  {
+    "time_stamp": "2022-08-12 21:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 39
+  },
+  {
+    "time_stamp": "2022-08-12 21:15:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 23
+  },
+  {
+    "time_stamp": "2022-08-12 21:30:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 20
+  },
+  {
+    "time_stamp": "2022-08-12 21:45:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 38
+  },
+  {
+    "time_stamp": "2022-08-12 22:00:00",
+    "sensor_type": "motion",
+    "location": "entrance",
+    "sensor_output": 32
   }
 ]
