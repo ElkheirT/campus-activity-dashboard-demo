@@ -3,14 +3,15 @@ import json
 import bcrypt
 import os
 import queue
+import pandas as pd
 from dotenv import load_dotenv
 from flask import Flask, jsonify, request
 from flask_socketio import SocketIO
 from flask_sqlalchemy import SQLAlchemy
 from flask_marshmallow import Marshmallow
-from sqlalchemy import Column, Float, String, Integer
+from sqlalchemy import Column, Float, String, Integer, func
 from flask_jwt_extended import JWTManager, jwt_required, create_access_token
-from datetime import datetime
+from datetime import datetime, date
 
 app = Flask(__name__)
 load_dotenv()
@@ -123,6 +124,18 @@ def add_sensor_data():
     message_queue.put(data_as_json)
     return jsonify(
         message=f'sensor type: {sensor_type}, location: {location}, output: {sensor_output}, time: {time_stamp}'), 200
+
+
+@socketio.on('get_binned_data')
+def get_binned_data(requested_date):
+    bins = [7, 11, 15, 19, 23]
+    labels = ['7AM-10AM', '11AM-2PM', '3PM-6PM', '7PM-10PM']
+    requested_date = datetime.strptime(requested_date, '%Y-%m-%d').date()
+    query_statement = SensorData.query.filter(func.date(SensorData.time_stamp) == requested_date).statement
+    df = pd.read_sql(query_statement, db.session.bind)
+    df['time_bins'] = pd.cut(df.time_stamp.dt.hour, bins, labels=labels, right=False)
+    grouped_df = df.groupby('time_bins', as_index=True)['sensor_output'].agg('sum')
+    socketio.emit('binned_data', grouped_df.to_json())
 
 
 @socketio.on('get_data_stream')
