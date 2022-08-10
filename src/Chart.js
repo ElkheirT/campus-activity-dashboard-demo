@@ -33,7 +33,7 @@ function Chart({openTime, closeTime}) {
     }, [motionSensorData]);
 
     const highDomain = useMemo(() => {
-        let newHighDomain = dataToDisplay.length > 1 ? dataToDisplay[dataToDisplay.length - 1].x : openTime;
+        let newHighDomain = dataToDisplay.length > 1 ? dataToDisplay[dataToDisplay.length - 1].x : closeTime;
         return newHighDomain;
     }, [motionSensorData]);
 

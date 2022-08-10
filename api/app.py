@@ -25,7 +25,7 @@ app.config['SECRET_KEY'] = os.environ['SECRET_KEY']
 db = SQLAlchemy(app)
 ma = Marshmallow(app)
 jwt = JWTManager(app)
-socketio = SocketIO(app, cors_allowed_origins=["http://localhost:3000"], logger=True, engineio_logger=True)
+socketio = SocketIO(app, cors_allowed_origins=["http://localhost:3000"])
 message_queue = queue.Queue()
 
 
@@ -110,7 +110,6 @@ def login():
 
 
 @app.route('/add_sensor_data', methods=['POST'])
-# @jwt_required()
 def add_sensor_data():
     time_stamp = datetime.strptime(request.form['time_stamp'], TIMESTAMP_FORMAT)
     sensor_type = request.form['sensor_type']
