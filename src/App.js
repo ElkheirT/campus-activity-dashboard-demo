@@ -145,10 +145,10 @@ function App() {
                             <Grid item lg={6} md={8} sm={10}>
                                 <Chart openTime={openTime} closeTime={closeTime}/>
                             </Grid>
-                            <Grid item lg={6} md={8} sm={10} textAlign={'right'}>
+                            <Grid item lg={6} md={8} sm={10} textAlign={'center'}>
                                 <Histogram date={histogramDate} data={histogramData}/>
                                 <DesktopDatePicker
-                                    label="Date desktop"
+                                    label="Date for peak times chart"
                                     inputFormat="MM/dd/yyyy"
                                     value={histogramDate}
                                     onChange={handleDateChange}
