@@ -37,6 +37,10 @@ function App() {
     const [histogramDate, setHistogramDate] = useState(prevOpenTime);
     const [histogramData, setHistogramData] = useState([]);
 
+    const [temp, setTemp] = useState(70);
+    const [humidity, setHumidity] = useState(67);
+
+
     const handleDateChange = (newDate) => {
         let newJSDate = newDate.toJSDate();
         setHistogramDate(newJSDate);
@@ -83,7 +87,13 @@ function App() {
         });
 
         socket.on('new_data_point', (data) => {
-            addToDB(data);
+            if (data.sensor_type === "motion") {
+                addToDB(data);
+            } else if (data.sensor_type === "temp") {
+                setTemp(data.sensor_output);
+            } else if (data.sensor_type === "humidity") {
+                setHumidity(data.sensor_output);
+            }
             let mostRecentFetch = data.time_stamp;
             localStorage.setItem('lastFetchTime', mostRecentFetch);
         });
@@ -133,12 +143,12 @@ function App() {
                             <InfoCard
                                 icon={temperatureIcon}
                                 title={"Temp"}
-                                text={"70°"}
+                                text={temp}
                             />
                             <InfoCard
                                 icon={humidityIcon}
                                 title={"Humidity"}
-                                text={"67%"}
+                                text={humidity}
                             />
                         </Stack>
                         <Grid container justifyContent={"center"} spacing={5}>

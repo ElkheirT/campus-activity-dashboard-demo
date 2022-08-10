@@ -131,7 +131,8 @@ def get_binned_data(requested_date):
     bins = [7, 11, 15, 19, 23]
     labels = ['7AM-10AM', '11AM-2PM', '3PM-6PM', '7PM-10PM']
     requested_date = datetime.strptime(requested_date, '%Y-%m-%d').date()
-    query_statement = SensorData.query.filter(func.date(SensorData.time_stamp) == requested_date).statement
+    query_statement = SensorData.query.filter(func.date(SensorData.time_stamp) == requested_date,
+                                              SensorData.sensor_type == "motion").statement
     df = pd.read_sql(query_statement, db.session.bind)
     df['time_bins'] = pd.cut(df.time_stamp.dt.hour, bins, labels=labels, right=False)
     grouped_df = df.groupby('time_bins', as_index=True)['sensor_output'].agg('sum')
@@ -151,7 +152,8 @@ def on_get_data():
 def get_data_in_range(date_range):
     start_date = datetime.strptime(date_range["startDate"], TIMESTAMP_FORMAT)
     end_date = datetime.strptime(date_range["endDate"], TIMESTAMP_FORMAT)
-    past_data = SensorData.query.filter(SensorData.time_stamp > start_date, SensorData.time_stamp < end_date)
+    past_data = SensorData.query.filter(SensorData.time_stamp > start_date, SensorData.time_stamp < end_date,
+                                        SensorData.sensor_type == "motion")
     if past_data:
         result = sensor_data_list_schema.dump(past_data)
         socketio.emit('past_data', result)
