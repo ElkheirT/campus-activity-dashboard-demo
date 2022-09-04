@@ -163,17 +163,7 @@ function Chart({openTime, data }) {
                         return "";
                     }}
                 />
-
             </VictoryChart>
-
-            <Stack direction={"row"} justifyContent={"space-between"} ml={5} mr={10}>
-                <IconButton variant={"outlined"}>
-                    <ArrowBackIcon/>
-                </IconButton>
-                <IconButton variant={"outlined"}>
-                    <ArrowForwardIcon/>
-                </IconButton>
-            </Stack>
         </div>)
 }
 
