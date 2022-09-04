@@ -12,35 +12,34 @@ import {Button, IconButton, Slider, Stack} from "@mui/material";
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
-function Chart({openTime, closeTime}) {
-    const motionSensorData = useLiveQuery(() => {
-        return db.sensorData.where('time_stamp').between(openTime, closeTime, true, true).toArray();
-    }, [], []);
+function Chart({openTime, data }) {
+    // const motionSensorData = useLiveQuery(() => {
+    //     return db.sensorData.where('time_stamp').between(openTime, closeTime, true, true).toArray();
+    // }, [], []);
     
     let [zoomDomain, setZoomDomain] = useState();
     let [selectedDomain, setSelectedDomain] = useState();
 
     const dataToDisplay = useMemo(() => {
-        let transformedData = motionSensorData.map((element) => {
+        let transformedData = data.map((element) => {
             return {x: new Date(element.time_stamp), y: element.sensor_output};
         });
         return transformedData;
-    }, [motionSensorData]);
+    }, [data]);
 
     const lowDomain = useMemo(() => {
-        let newLowDomain = dataToDisplay.length > 5 ? dataToDisplay[dataToDisplay.length - 5].x : openTime;
+        let newLowDomain = dataToDisplay.length > 5 ? dataToDisplay[dataToDisplay.length - 5].x : 0;
         return newLowDomain;
-    }, [motionSensorData]);
+    }, [data]);
 
     const highDomain = useMemo(() => {
-        let newHighDomain = dataToDisplay.length > 1 ? dataToDisplay[dataToDisplay.length - 1].x : closeTime;
+        let newHighDomain = dataToDisplay.length > 1 ? dataToDisplay[dataToDisplay.length - 1].x : 0;
         return newHighDomain;
-    }, [motionSensorData]);
+    }, [data]);
 
     useEffect(() => {
         setZoomDomain({x: [lowDomain, highDomain]});
-    }, [motionSensorData]);
-
+    }, [])
 
     function handleZoom(domain) {
         setSelectedDomain(domain);
@@ -108,7 +107,7 @@ function Chart({openTime, closeTime}) {
                 <VictoryAxis
                     tickValues={dataToDisplay.map(i => i.x)}
                     tickFormat={(t) => {
-                        if (motionSensorData?.length <= 1) {
+                        if (dataToDisplay?.length <= 1) {
                             return "";
                         }
                         return getTickLabel(t);
@@ -151,7 +150,7 @@ function Chart({openTime, closeTime}) {
                     tickCount={4}
                     tickValues={dataToDisplay.map(i => i.x)}
                     tickFormat={(t) => {
-                        if (motionSensorData?.length <= 1) {
+                        if (dataToDisplay?.length <= 1) {
                             return "";
                         }
                         return getTickLabel(t);

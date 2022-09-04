@@ -19,6 +19,7 @@ import InfoCard from "./InfoCard";
 import Histogram from "./Histogram";
 import {DesktopDatePicker, LocalizationProvider} from "@mui/x-date-pickers";
 import {AdapterLuxon} from '@mui/x-date-pickers/AdapterLuxon';
+import {data} from "./data";
 
 function App() {
     let currentTime = new Date();
@@ -153,7 +154,7 @@ function App() {
                         </Stack>
                         <Grid container justifyContent={"center"} spacing={5}>
                             <Grid item lg={6} md={8} sm={10}>
-                                <Chart openTime={openTime} closeTime={closeTime}/>
+                                <Chart openTime={openTime} data={data}/>
                             </Grid>
                             <Grid item lg={6} md={8} sm={10} textAlign={'center'}>
                                 <Histogram date={histogramDate} data={histogramData}/>
