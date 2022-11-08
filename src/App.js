@@ -97,6 +97,7 @@ function App() {
                                     label="Date for peak times chart"
                                     inputFormat="MM/dd/yyyy"
                                     value={histogramDate}
+                                    disableFuture={true}
                                     onChange={handleDateChange}
                                     renderInput={(params) => <TextField {...params} />}
                                 />
