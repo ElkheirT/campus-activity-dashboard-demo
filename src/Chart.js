@@ -61,7 +61,7 @@ function Chart({openTime, data}) {
 
     return (
         <div>
-            <svg style={{height: 0}}>
+            <svg style={{height: 0, display: "block"}}>
                 <defs>
                     <linearGradient id="myGradient" gradientTransform="rotate(90)">
                         <stop offset="0%" stopColor="#8884d8" stopOpacity={.8}/>
@@ -71,7 +71,6 @@ function Chart({openTime, data}) {
             </svg>
             <h2 style={{textAlign: "center"}}>Activity data
                 for {openTime.getMonth() + 1}/{openTime.getDate()}/{openTime.getFullYear()}</h2>
-
             <VictoryChart
                 containerComponent={
                     <VictoryZoomContainer
