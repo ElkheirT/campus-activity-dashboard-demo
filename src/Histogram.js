@@ -1,7 +1,5 @@
 import React from 'react';
-import {VictoryHistogram, VictoryAxis, VictoryChart, VictoryLabel, VictoryLine, VictoryBar} from "victory";
-import {useLiveQuery} from "dexie-react-hooks";
-import {db} from "./db";
+import {VictoryChart, VictoryBar} from "victory";
 
 function Histogram({date, data}) {
     return (

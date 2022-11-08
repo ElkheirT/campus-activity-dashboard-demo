@@ -6,11 +6,6 @@ import {
     VictoryZoomContainer,
 } from "victory";
 import {useEffect, useMemo, useState} from "react";
-import {useLiveQuery} from "dexie-react-hooks";
-import {db} from "./db";
-import {Button, IconButton, Slider, Stack} from "@mui/material";
-import ArrowBackIcon from '@mui/icons-material/ArrowBack';
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 function Chart({openTime, data}) {
     let [zoomDomain, setZoomDomain] = useState();
