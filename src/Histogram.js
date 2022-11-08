@@ -4,13 +4,6 @@ import {useLiveQuery} from "dexie-react-hooks";
 import {db} from "./db";
 
 function Histogram({date, data}) {
-    let testData = [
-        {x: "7AM-10AM", y: 243},
-        {x: "11AM-2PM", y: 451},
-        {x: "3PM-6PM", y: 572},
-        {x: "7PM-10PM", y: 341},
-    ]
-
     return (
         <div>
             <h2 style={{textAlign: "center"}}>Peak times
