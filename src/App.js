@@ -40,13 +40,26 @@ function App() {
 
     const [temp, setTemp] = useState(70);
     const [humidity, setHumidity] = useState(67);
+    
+    const getRandomInt = (min, max) => {
+        return Math.floor(Math.random() * (max - min) + min);
+    }
 
+    const generateNewHistogramData = () => {
+        let newData = [
+            {x: "7AM-10AM", y: getRandomInt(200, 300)},
+            {x: "11AM-2PM", y: getRandomInt(300, 400)},
+            {x: "3PM-6PM", y: getRandomInt(350, 450)},
+            {x: "7PM-10PM", y: getRandomInt(200, 300)},
+        ];
+        return newData;
+    }
 
     const handleDateChange = (newDate) => {
         let newJSDate = newDate.toJSDate();
+        let newData = generateNewHistogramData();
         setHistogramDate(newJSDate);
-        let queryString = `${newJSDate.getFullYear()}-${newJSDate.getMonth() + 1}-${newJSDate.getDate()}`;
-        socket.emit('get_binned_data', queryString);
+        setHistogramData(newData);
     };
 
     const handleHistogramDataChange = (newData) => {
