@@ -19,20 +19,11 @@ import {AdapterLuxon} from '@mui/x-date-pickers/AdapterLuxon';
 import {data} from "./data";
 
 function App() {
-    let currentTime = new Date();
-    // assume library is open from 7AM to 10PM
-    let openTime = new Date(currentTime.getFullYear(), currentTime.getMonth(), currentTime.getDate(), 7, 0, 0);
-    let closeTime = new Date(currentTime.getFullYear(), currentTime.getMonth(), currentTime.getDate(), 22, 0, 0);
+    let currentDay = new Date();
+    let previousDay = new Date();
+    previousDay.setDate(currentDay.getDate() - 1);
 
-    let prevOpenTime = new Date(openTime.getTime());
-    let prevCloseTime = new Date(closeTime.getTime());
-
-    prevOpenTime.setDate(prevOpenTime.getDate() - 1);
-    prevCloseTime.setDate(prevCloseTime.getDate() - 1);
-
-    // const socket = io('localhost:5000');
-
-    const [histogramDate, setHistogramDate] = useState(prevOpenTime);
+    const [histogramDate, setHistogramDate] = useState(previousDay);
     const [histogramData, setHistogramData] = useState([]);
 
     const [temp, setTemp] = useState(70);
@@ -64,7 +55,7 @@ function App() {
     };
 
     useEffect(() => {
-        setHistogramDate(prevCloseTime);
+        setHistogramDate(previousDay);
         setHistogramData(generateNewHistogramData());
     }, [])
 
@@ -173,7 +164,7 @@ function App() {
                         </Stack>
                         <Grid container justifyContent={"center"} alignItems={"flex-start"} spacing={5}>
                             <Grid item lg={6} md={8} sm={10}>
-                                <Chart openTime={openTime} data={data}/>
+                                <Chart openTime={currentDay} data={data}/>
                             </Grid>
                             <Grid item lg={6} md={8} sm={10} textAlign={'center'}>
                                 <Histogram date={histogramDate} data={histogramData}/>
