@@ -12,11 +12,7 @@ import {Button, IconButton, Slider, Stack} from "@mui/material";
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
-function Chart({openTime, data }) {
-    // const motionSensorData = useLiveQuery(() => {
-    //     return db.sensorData.where('time_stamp').between(openTime, closeTime, true, true).toArray();
-    // }, [], []);
-    
+function Chart({openTime, data}) {
     let [zoomDomain, setZoomDomain] = useState();
     let [selectedDomain, setSelectedDomain] = useState();
 
@@ -96,12 +92,6 @@ function Chart({openTime, data }) {
                             stroke: "#8884d8", fill: "url(#myGradient)"
                         }, parent: {border: "1px solid #ccc"}
                     }}
-
-                    // animate={{
-                    //     duration: 700,
-                    //     onEnter: {duration: 0},
-                    //     onLoad: {duration: 0}
-                    // }}
                 />
 
                 <VictoryAxis
