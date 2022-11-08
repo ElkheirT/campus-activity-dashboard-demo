@@ -53,10 +53,14 @@ function App() {
     }
 
     const handleDateChange = (newDate) => {
-        let newJSDate = newDate.toJSDate();
-        let newData = generateNewHistogramData();
-        setHistogramDate(newJSDate);
-        setHistogramData(newData);
+        let dateString = newDate.toLocaleString();
+        if (localStorage.getItem(dateString) === null) {
+            let newData = generateNewHistogramData();
+            localStorage.setItem(dateString, JSON.stringify(newData));
+        }
+        let histogramData = JSON.parse(localStorage.getItem(dateString));
+        setHistogramDate(newDate.toJSDate());
+        setHistogramData(histogramData);
     };
 
     useEffect(() => {
@@ -127,9 +131,9 @@ function App() {
     //     });
     // }
 
-    // function dateToString(date) {
-    //     return `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()} ${date.getHours()}:${date.getMinutes().toString().padStart(2, '0')}:${date.getSeconds().toString().padStart(2, '0')}`;
-    // }
+    function dateToString(date) {
+        return `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()} ${date.getHours()}:${date.getMinutes().toString().padStart(2, '0')}:${date.getSeconds().toString().padStart(2, '0')}`;
+    }
 
     // async function addToDB(data) {
     //     try {
@@ -146,7 +150,7 @@ function App() {
     return (
         <LocalizationProvider dateAdapter={AdapterLuxon}>
             <div className="App">
-                <Box>
+                <Box mb={2}>
                     <AppBar position={"static"}>
                         <Toolbar>
                             <Typography variant={"h6"}>
