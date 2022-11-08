@@ -59,6 +59,11 @@ function App() {
         setHistogramData(newData);
     };
 
+    useEffect(() => {
+        setHistogramDate(prevCloseTime);
+        setHistogramData(generateNewHistogramData());
+    }, [])
+
     // const handleHistogramDataChange = (newData) => {
     //     let dataAsJSON = JSON.parse(newData);
     //     let dataAsArray = [];
